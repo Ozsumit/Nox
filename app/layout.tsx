@@ -30,7 +30,7 @@ export default function RootLayout({
               />
             </a>
             <div className=" nav border border-white dark:border-white/[0.2] group-hover:border-slate-70">
-              <a className=" font-mono" href="/">
+              <a className=" font-mono" href="/Nox">
                 Home
               </a>
               <a className=" font-mono" href="contact.html">
