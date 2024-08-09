@@ -131,8 +131,8 @@ const MyPage = () => {
           <ShootingStars />
           <StarsBackground />
           <HoverEffect
-            items={items}
-            className="hidden"
+            items={subs}
+            className="subs"
             // onCardClick={handleCardClick}
           />
           {isLoading ? (
@@ -150,7 +150,7 @@ const MyPage = () => {
           ) : (
             <HoverEffect
               items={lessons}
-              className="lesson"
+              className="lesson hidden"
               // onCardClick={handleCardClick}
             />
           )}

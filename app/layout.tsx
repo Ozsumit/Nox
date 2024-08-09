@@ -29,7 +29,7 @@ export default function RootLayout({
                 alt="Follow us on Twitter"
               />
             </a>
-            <div className=" nav">
+            <div className=" nav border border-white dark:border-white/[0.2] group-hover:border-slate-70">
               <a className=" font-mono" href="/">
                 Home
               </a>

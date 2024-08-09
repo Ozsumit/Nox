@@ -33,7 +33,7 @@ body {
   height: 10vh;
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
-  background-color: #ffffff17;
+  background-color: #000000;
   border-radius: 0.8rem;
   -webkit-border-radius: 0.8rem;
   -moz-border-radius: 0.8rem;
@@ -64,11 +64,11 @@ body {
 
   a::before {
     content: "";
-    color: #d6d6d6;
-    border: 0px solid #d6d6d6;
+    color: #fefefe;
+    border: 0px solid #f1f1f1;
     position: absolute;
-    width: 0rem;
-    margin-top: 8%;
+    width: 0%;
+    margin-top: 10%;
     transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
@@ -77,16 +77,16 @@ body {
   }
 
   a:hover::before {
-    margin-top: 8%;
+    margin-top: 10%;
     transform: scaleX(1);
     -webkit-transform-origin: bottom left;
     -ms-transform-origin: bottom left;
     transform-origin: bottom left;
     content: "";
-    color: #1ebecd;
-    border: 1px solid #1ebecd;
+    color: #b8b8b8;
+    border: 1px solid #d3d3d3;
     position: absolute;
-    width: 4rem;
+    width: 16%;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;

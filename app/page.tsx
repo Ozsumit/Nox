@@ -12,7 +12,7 @@ const MyPage = () => {
     {
       title: "Class 9",
       description: "*Unavailable!!*",
-      link: "./class10",
+      link: "#",
     },
     {
       title: "Class 10",
@@ -21,7 +21,7 @@ const MyPage = () => {
     },
     {
       title: "Class 11",
-      description: "Available",
+      description: "*Unvailable!!*",
       link: "##",
     },
     {
