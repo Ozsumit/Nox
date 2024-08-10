@@ -48,7 +48,11 @@ const MyPage = () => {
     {
       title: "Nepali",
       description: "Unavailable!!",
+<<<<<<< HEAD
       link: "..//pages/class10/Nepali",
+=======
+      link: "//pages/class10/Nepali",
+>>>>>>> face1328a395938a2e98bd42f88476028dbefa9e
     },
     {
       title: "WMAD",
