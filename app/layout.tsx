@@ -31,7 +31,7 @@ export default function RootLayout({
               />
             </a>
             <div className=" nav hidden lg:flex border border-white dark:border-white/[0.2] group-hover:border-slate-70">
-              <a className=" font-mono" href="/">
+              <a className=" font-mono" href="//">
                 Home
               </a>
               <a className=" font-mono" href="contact.html">
@@ -48,7 +48,7 @@ export default function RootLayout({
             <a className=" font-mono" href="/">
               Home
             </a>
-            <a className=" font-mono" href="contact.html">
+            <a className=" font-mono" href="./">
               Contact{" "}
             </a>
             <a className=" font-mono" href="Dev.html#GuessingGame">
