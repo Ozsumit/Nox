@@ -42,7 +42,10 @@ const MyPage = () => {
           </h2>
           <ShootingStars />
           <StarsBackground />
-          <HoverEffect items={items} className="my-custom-class" />
+          <HoverEffect
+            items={items}
+            className="my-custom-class fade-from-right"
+          />
         </div>
       </div>
     </main>

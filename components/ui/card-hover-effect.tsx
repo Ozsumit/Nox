@@ -3,8 +3,9 @@
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Iframe from "./iframe";
+import styles from "../styles/CardAnimation.module.css";
 
 export const HoverEffect = ({
   items,
@@ -20,6 +21,11 @@ export const HoverEffect = ({
   onCardClick?: (description: string) => void;
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [animated, setAnimated] = useState(false);
+
+  useEffect(() => {
+    setAnimated(true);
+  }, []);
 
   return (
     <div
@@ -32,7 +38,11 @@ export const HoverEffect = ({
         <Link
           href={item.link}
           key={item.title}
-          className="relative group block p-2 h-full w-full cursor-pointer"
+          className={cn(
+            "relative group block p-2 h-full w-full cursor-pointer ",
+            animated && styles.fadeFromRight
+          )}
+          style={{ animationDelay: `${idx * 200}ms` }}
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
           onClick={() => onCardClick && onCardClick(item.description)}
