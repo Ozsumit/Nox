@@ -124,13 +124,13 @@ const MyPage = () => {
           <ShootingStars />
           <StarsBackground />
           <HoverEffect
-            items={subs}
-            className="subs"
+            items={lessons}
+            className="lesson hidden"
             // onCardClick={handleCardClick}
           />
           {isLoading ? (
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 rounded-5xl">
-              {[...Array(8)].map((_, index) => (
+              {[...Array(4)].map((_, index) => (
                 <Skeleton
                   key={index}
                   height={150}
@@ -142,8 +142,8 @@ const MyPage = () => {
             </div>
           ) : (
             <HoverEffect
-              items={lessons}
-              className="lesson hidden"
+              items={subs}
+              className="subs "
               // onCardClick={handleCardClick}
             />
           )}

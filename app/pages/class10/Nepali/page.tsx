@@ -141,7 +141,7 @@ const MyPage = () => {
           />
           {isLoading ? (
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 rounded-5xl">
-              {[...Array(8)].map((_, index) => (
+              {[...Array(13)].map((_, index) => (
                 <Skeleton
                   key={index}
                   height={150}

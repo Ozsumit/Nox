@@ -29,7 +29,7 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 55vh;
+  /* width: 55vh; */
   height: 10vh;
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);

@@ -17,9 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className=" scroll-smooth">
-      <body className="h-screen rounded-md bg-black flex flex-col w-auto px-4 pt-2 scroll-smooth">
+      <body className="h-screen rounded-md bg-black flex flex-col w-auto sm:px-0 px-4 pt-2 scroll-smooth">
         <div>
-          <div className="navigation flex justify-between items-center text-2xl">
+          <div className="navigation flex-col lg:flex-row flex justify-between items-center text- lg:mx-8">
             <a href="index.html#Home" className="logoxdc">
               <Image
                 priority
@@ -29,7 +29,7 @@ export default function RootLayout({
                 alt="Follow us on Twitter"
               />
             </a>
-            <div className=" nav border border-white dark:border-white/[0.2] group-hover:border-slate-70">
+            <div className=" nav sm:w-11/12 lg:w-1/3 sm:h-auto sm:p-4 border  border-white dark:border-white/[0.2] group-hover:border-slate-70">
               <a className=" font-mono" href="/Nox">
                 Home
               </a>
