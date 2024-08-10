@@ -60,7 +60,7 @@ export const HoverEffect = ({
                 <h4 className="text-zinc-100 font-bold tracking-wide mt-0 text-xl">
                   {item.title}
                 </h4>
-                <p className="mt-8 text-zinc-400 tracking-wide leading-relaxed text-md">
+                <p className="mt-5 text-zinc-400 tracking-wide leading-relaxed text-md">
                   {item.description}
                 </p>
               </div>

@@ -6,7 +6,7 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 import Iframe from "@/components/ui/iframe";
-
+import { Breadcrumb } from "@/components/ui/breadcrumbs";
 const MyPage = () => {
   const [visibleLessons, setVisibleLessons] = useState<string | null>(null);
   const [currentIdentifier, setCurrentIdentifier] = useState<string>("default");
@@ -121,26 +121,17 @@ const MyPage = () => {
       link: "#pdf",
     },
   ];
-
+  const pagination = [
+    { label: "Home", href: "/" },
+    { label: "Class 10", href: "/class10/" },
+    { label: "DBMS", href: "/app/pages/class10/Nepali" },
+  ];
   return (
     <main>
       <div className="min-h-screen h-auto rounded-md bg-black flex flex-col w-auto px-28 pt-2">
         <div className="hero flex justify-center flex-col pt-16 w-auto">
-          {isLoading ? (
-            <Skeleton
-              width={900}
-              height={80}
-              className="mb-4 flex justify-center items-center self-center       "
-              baseColor="#090909"
-              highlightColor="#444"
-            />
-          ) : (
-            <h2 className="relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8">
-              <span>Class 10</span>
-              <span className="text-grays text-lg font-thin">x</span>
-              <span>Star Background</span>
-            </h2>
-          )}
+          <Breadcrumb className=" z-10" items={pagination} />
+
           <ShootingStars />
           <StarsBackground />
           <HoverEffect

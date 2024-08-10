@@ -6,6 +6,7 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 import Iframe from "@/components/ui/iframe";
+import Link from "next/link";
 import { Breadcrumb } from "@/components/ui/breadcrumbs";
 const MyPage = () => {
   const [visibleLessons, setVisibleLessons] = useState<string | null>(null);
@@ -16,10 +17,20 @@ const MyPage = () => {
     // Simulate loading delay
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 700);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
+
+  const toggleLessons = (subjectTitle: string) => {
+    setVisibleLessons((currentVisible) =>
+      currentVisible === subjectTitle ? null : subjectTitle
+    );
+  };
+
+  const handleCardClick = (title: string) => {
+    setCurrentIdentifier(title);
+  };
 
   const items = [
     {
@@ -30,7 +41,7 @@ const MyPage = () => {
     {
       title: "Class 10",
       description: "Available",
-      link: "../pages/class10/Nepali",
+      link: "##",
     },
     {
       title: "Class 11",
@@ -44,75 +55,42 @@ const MyPage = () => {
     },
   ];
 
-  const subs = [
-    {
-      title: "Nepali",
-      description: "Unavailable!!",
-      link: "..//pages/class10/Nepali",
-    },
-    {
-      title: "WMAD",
-      description: "Available",
-      link: "..//pages/class10/DBMS",
-    },
-    {
-      title: "Object Oriented Programming",
-      description: "Available",
-      link: "../pages/class10/OOP",
-    },
-    {
-      title: "Math",
-      description: "Unavailable!!",
-      link: "##",
-    },
-  ];
-
   const lessons = [
     {
-      title: "Unit1",
-      description: "Unavailable!!",
-      link: "##",
+      title: "Unit 1",
+      description: "Introduction to Object Oriented Programming",
+      link: "#pdf",
     },
     {
-      title: "Unit2",
-      description: "Available",
-      link: "##",
+      title: "Unit 2",
+      description: "Unavailable",
+      link: "#pdf",
     },
     {
-      title: "Unit3",
-      description: "Available",
-      link: "##",
+      title: "Unit 3",
+      description: "Unavailable",
+      link: "#pdf",
     },
     {
-      title: "Unit4",
-      description: "Unavailable!!",
-      link: "##",
+      title: "Unit 4 ",
+      description: "Unavaialable",
+      link: "#pdf",
     },
     {
-      title: "Unit5",
-      description: "Unavailable!!",
-      link: "##",
+      title: "Unit 5",
+      description: "Unavailable",
+      link: "#",
     },
     {
-      title: "Unit6",
-      description: "Available",
-      link: "##",
-    },
-    {
-      title: "Unit7",
-      description: "Available",
-      link: "##",
-    },
-    {
-      title: "Unit8",
-      description: "Unavailable!!",
-      link: "##",
+      title: "Unit 6",
+      description: "Unavailable",
+      link: "#",
     },
   ];
   const pagination = [
     { label: "Home", href: "/" },
     { label: "Class 10", href: "/class10/" },
-    // { label: "DBMS", href: "/app/pages/class10/DBMS" },
+    { label: "DBMS", href: "/app/pages/class10/OOP" },
   ];
 
   return (
@@ -124,9 +102,9 @@ const MyPage = () => {
           <ShootingStars />
           <StarsBackground />
           <HoverEffect
-            items={subs}
-            className="subs"
-            // onCardClick={handleCardClick}
+            items={items}
+            className="hidden"
+            onCardClick={handleCardClick}
           />
           {isLoading ? (
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 rounded-5xl">
@@ -143,10 +121,25 @@ const MyPage = () => {
           ) : (
             <HoverEffect
               items={lessons}
-              className="lesson hidden"
-              // onCardClick={handleCardClick}
+              className="lesson"
+              onCardClick={handleCardClick}
             />
           )}
+          <div
+            id="pdf"
+            className="flex justify-center items-center my-16 rounded-4xl"
+          >
+            {isLoading ? (
+              <Skeleton
+                height={400}
+                width="100%"
+                baseColor="#090909"
+                highlightColor="#444"
+              />
+            ) : (
+              <Iframe identifier={currentIdentifier} />
+            )}
+          </div>
         </div>
       </div>
     </main>

@@ -17,6 +17,9 @@ export const urlMappings: { [key: string]: string } = {
   "Kartabya": "https://drive.google.com/file/d/1AF9vWf6rjNWv09nGYDouY-awzyTwSCzn/preview",
   "Pablo Picasso": "https://drive.google.com/file/d/1VVYPuPeouRdTfgq2Xkd17lot7tpGHRut/preview",
   "Pakhnos!": "https://drive.google.com/file/d/15lL-_dm4Co6WvHXkjvPKojG9dQfiNif_/preview",
-  
-
+  "Introduction to DBMS  Architecture":"https://drive.google.com/file/d/1QU-VaWXieh87FTl6L4IT4lnRKjtShlb3/preview",
+  "Entity Relationship Modal":"https://drive.google.com/file/d/1js4TnHdBednI4xrT72J4YSe59Ab7pzVf/preview",
+  "Sequencial Query Language (SQL)":"https://drive.google.com/file/d/1UVPe7phWPIhJJefkVxs49SCd0mIk3eKC/preview",
+  "Database Design":"https://drive.google.com/file/d/1k6L9n_2JmAHvURO43qLkXGrQ9Hw1mnwI/preview",
+"Introduction to Object Oriented Programming":"https://drive.google.com/file/d/1Zu8AmqXZtwHmNcn-eR1OEKZFQGlN_qcP/preview",
 };
