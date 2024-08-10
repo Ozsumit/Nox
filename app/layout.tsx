@@ -45,7 +45,7 @@ export default function RootLayout({
             <div className="w-1"></div>
           </div>
           <div className=" nav2 lg:hidden  flex-row flex justify-center items-center pt-4 border border-white dark:border-white/[0.2] group-hover:border-slate-70">
-            <a className=" font-mono" href="/">
+            <a className=" font-mono" href="/app">
               Home
             </a>
             <a className=" font-mono" href="./">
