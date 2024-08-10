@@ -1,12 +1,12 @@
 .fadeFromRight {
-  animation: fromright 0.4s ease-in-out 1 both;
-  -webkit-animation: fromright 0.4s ease-in-out 1 BOTH;
+  animation: fromright 0.4s ease-in-out 0.2s 1 backwards;
+  -webkit-animation: fromright 0.4s ease-in-out 0.2s 1 backwards;
 }
 
 @keyframes fromright {
   from {
     opacity: 0;
-    scale: 0.9;
+    scale: 0.8;
   }
   to {
     opacity: 1;
