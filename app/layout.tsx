@@ -51,8 +51,8 @@ export default function RootLayout({
             <a className=" font-mono" href=".">
               Contact{" "}
             </a>
-            <a className=" font-mono" href=".">
-              Dev
+            <a className=" font-mono" href="Dev.html#GuessingGame">
+              Dev{" "}
             </a>
           </div>
         </div>
