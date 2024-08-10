@@ -48,17 +48,17 @@ const MyPage = () => {
     {
       title: "Nepali",
       description: "Unavailable!!",
-      link: "..//pages/class10/Nepali",
+      link: "//pages/class10/Nepali",
     },
     {
       title: "WMAD",
       description: "Available",
-      link: "..//pages/class10/DBMS",
+      link: "//pages/class10/DBMS",
     },
     {
       title: "Object Oriented Programming",
       description: "Available",
-      link: "../pages/class10/OOP",
+      link: "//pages/class10/OOP",
     },
     {
       title: "Math",
