@@ -11,7 +11,7 @@ const MyPage = () => {
   const items = [
     {
       title: "Class 9",
-      description: "*Unavailable!!*",
+      description: "*Unavailable!*",
       link: "#",
     },
     {
