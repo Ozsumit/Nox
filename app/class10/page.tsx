@@ -47,7 +47,7 @@ const MyPage = () => {
     {
       title: "Nepali",
       description: "Unavailable!!",
-      link: "..Nox//pages/class10/Nepali",
+      link: "../pages/class10/Nepali",
     },
     {
       title: "WMAD",
