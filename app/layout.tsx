@@ -38,7 +38,7 @@ export default function RootLayout({
                 Contact{" "}
               </a>
               <a className=" font-mono" href=".">
-                Dev{" "}
+                Dev
               </a>
             </div>
 
