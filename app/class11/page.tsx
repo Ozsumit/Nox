@@ -6,7 +6,6 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 import Iframe from "@/components/ui/iframe";
-import Link from "next/link";
 import { Breadcrumb } from "@/components/ui/breadcrumbs";
 const MyPage = () => {
   const [visibleLessons, setVisibleLessons] = useState<string | null>(null);
@@ -22,16 +21,6 @@ const MyPage = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const toggleLessons = (subjectTitle: string) => {
-    setVisibleLessons((currentVisible) =>
-      currentVisible === subjectTitle ? null : subjectTitle
-    );
-  };
-
-  const handleCardClick = (title: string) => {
-    setCurrentIdentifier(title);
-  };
-
   const items = [
     {
       title: "Class 9",
@@ -41,7 +30,7 @@ const MyPage = () => {
     {
       title: "Class 10",
       description: "Available",
-      link: "##",
+      link: "../pages/class10/Nepali",
     },
     {
       title: "Class 11",
@@ -55,60 +44,94 @@ const MyPage = () => {
     },
   ];
 
+  const subs = [
+    {
+      title: "Java",
+      description: "Unavailable!!",
+      link: "/pages/class11/Javaa",
+    },
+    {
+      title: "WMAD",
+      description: "Available",
+      link: "/pages/class11/WMAD",
+    },
+    {
+      title: "Operating System",
+      description: "Available",
+      link: "/pages/class11/OS",
+    },
+    {
+      title: "Math",
+      description: "Unavailable!!",
+      link: "##",
+    },
+  ];
+
   const lessons = [
     {
-      title: "Unit 1",
-      description: "Introduction to DBMS  Architecture",
-      link: "#pdf",
+      title: "Unit1",
+      description: "Unavailable!!",
+      link: "##",
     },
     {
-      title: "Unit 2",
-      description: "Entity Relationship Modal",
-      link: "#pdf",
+      title: "Unit2",
+      description: "Available",
+      link: "##",
     },
     {
-      title: "Unit 3",
-      description: "Sequencial Query Language (SQL)",
-      link: "#pdf",
+      title: "Unit3",
+      description: "Available",
+      link: "##",
     },
     {
-      title: "Unit 4 ",
-      description: "Database Design",
-      link: "#pdf",
+      title: "Unit4",
+      description: "Unavailable!!",
+      link: "##",
     },
     {
-      title: "Unit 5",
-      description: "Unavailabe",
-      link: "#",
+      title: "Unit5",
+      description: "Unavailable!!",
+      link: "##",
     },
     {
-      title: "Unit 6",
-      description: "Unavailable",
-      link: "#",
+      title: "Unit6",
+      description: "Unavailable!!",
+      link: "##",
+    },
+    {
+      title: "Unit7",
+      description: "Unavailable!!",
+      link: "##",
+    },
+    {
+      title: "Unit8",
+      description: "Unavailable!!",
+      link: "##",
     },
   ];
   const pagination = [
     { label: "Home", href: "/" },
-    { label: "Class 10", href: "/class10/" },
-    { label: "DBMS", href: "/app/pages/class10/DBMS" },
+    { label: "Class 11", href: "/class10/" },
+    // { label: "DBMS", href: "/app/pages/class10/DBMS" },
   ];
 
   return (
     <main>
       <div className=" h-screen rounded-md bg-black flex flex-col w-auto lg:px-28 sm:px-4 pt-2">
+        {" "}
         <div className="hero flex justify-center flex-col pt-16 w-auto">
           <Breadcrumb className=" z-10" items={pagination} />
 
           <ShootingStars />
           <StarsBackground />
           <HoverEffect
-            items={items}
-            className="hidden"
-            onCardClick={handleCardClick}
+            items={lessons}
+            className="lesson hidden"
+            // onCardClick={handleCardClick}
           />
           {isLoading ? (
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 rounded-5xl">
-              {[...Array(6)].map((_, index) => (
+              {[...Array(4)].map((_, index) => (
                 <Skeleton
                   key={index}
                   height={150}
@@ -120,26 +143,11 @@ const MyPage = () => {
             </div>
           ) : (
             <HoverEffect
-              items={lessons}
-              className="lesson"
-              onCardClick={handleCardClick}
+              items={subs}
+              className="subs "
+              // onCardClick={handleCardClick}
             />
           )}
-          <div
-            id="pdf"
-            className="flex justify-center items-center my-16 rounded-4xl"
-          >
-            {isLoading ? (
-              <Skeleton
-                height={400}
-                width="100%"
-                baseColor="#090909"
-                highlightColor="#444"
-              />
-            ) : (
-              <Iframe identifier={currentIdentifier} />
-            )}
-          </div>
         </div>
       </div>
     </main>

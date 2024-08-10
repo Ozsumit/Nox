@@ -58,22 +58,22 @@ const MyPage = () => {
   const lessons = [
     {
       title: "Unit 1",
-      description: "Introduction to DBMS  Architecture",
+      description: "Java Fundamentals",
       link: "#pdf",
     },
     {
       title: "Unit 2",
-      description: "Entity Relationship Modal",
+      description: "DataTypes and Variables",
       link: "#pdf",
     },
     {
       title: "Unit 3",
-      description: "Sequencial Query Language (SQL)",
+      description: "Class And Objects",
       link: "#pdf",
     },
     {
       title: "Unit 4 ",
-      description: "Database Design",
+      description: "Control Statements",
       link: "#pdf",
     },
     {
@@ -89,8 +89,8 @@ const MyPage = () => {
   ];
   const pagination = [
     { label: "Home", href: "/" },
-    { label: "Class 10", href: "/class10/" },
-    { label: "DBMS", href: "/app/pages/class10/DBMS" },
+    { label: "Class 11", href: "/class11/" },
+    { label: "Java", href: "/app/pages/class11/Java" },
   ];
 
   return (

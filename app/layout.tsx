@@ -17,9 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className=" scroll-smooth">
-      <body className="h-screen rounded-md bg-black flex flex-col w-auto sm:px-0 px-4 pt-2 scroll-smooth">
+      <body className="h-screen rounded-md bg-black flex flex-col w-auto px-4 pt-2 scroll-smooth">
         <div>
-          <div className="navigation flex-col lg:flex-row flex justify-between items-center text- lg:mx-8">
+          <div className="navigation flex justify-between items-center text-2xl">
             <a href="index.html#Home" className="logoxdc">
               <Image
                 priority
@@ -27,10 +27,11 @@ export default function RootLayout({
                 height={100}
                 src={logo}
                 alt="Follow us on Twitter"
+                className="mb-4 "
               />
             </a>
-            <div className=" nav sm:w-11/12 lg:w-1/3 sm:h-auto sm:p-4 border  border-white dark:border-white/[0.2] group-hover:border-slate-70">
-              <a className=" font-mono" href="/Nox">
+            <div className=" nav hidden lg:flex border border-white dark:border-white/[0.2] group-hover:border-slate-70">
+              <a className=" font-mono" href="/">
                 Home
               </a>
               <a className=" font-mono" href="contact.html">
@@ -40,7 +41,19 @@ export default function RootLayout({
                 Dev{" "}
               </a>
             </div>
+
             <div className="w-1"></div>
+          </div>
+          <div className=" nav2 lg:hidden  flex-row flex justify-center items-center pt-4 border border-white dark:border-white/[0.2] group-hover:border-slate-70">
+            <a className=" font-mono" href="/">
+              Home
+            </a>
+            <a className=" font-mono" href="contact.html">
+              Contact{" "}
+            </a>
+            <a className=" font-mono" href="Dev.html#GuessingGame">
+              Dev{" "}
+            </a>
           </div>
         </div>
         {children}

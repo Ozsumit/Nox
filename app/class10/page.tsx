@@ -48,20 +48,20 @@ const MyPage = () => {
     {
       title: "Nepali",
       description: "Unavailable!!",
-      link: "//pages/class10/Nepali",
+      link: "/pages/class10/Nepali",
     },
     {
-      title: "WMAD",
+      title: "DBMS",
       description: "Available",
-      link: "//pages/class10/DBMS",
+      link: "/pages/class10/DBMS",
     },
     {
       title: "Object Oriented Programming",
       description: "Available",
-      link: "//pages/class10/OOP",
+      link: "/pages/class10/OOP",
     },
     {
-      title: "Math",
+      title: "English",
       description: "Unavailable!!",
       link: "##",
     },
@@ -117,7 +117,8 @@ const MyPage = () => {
 
   return (
     <main>
-      <div className="min-h-screen h-auto rounded-md bg-black flex flex-col w-auto px-28 pt-2">
+      <div className=" h-screen rounded-md bg-black flex flex-col w-auto lg:px-28 sm:px-4 pt-2">
+        {" "}
         <div className="hero flex justify-center flex-col pt-16 w-auto">
           <Breadcrumb className=" z-10" items={pagination} />
 

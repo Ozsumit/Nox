@@ -55,7 +55,7 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <div className="rounded-2xl h-36 min-w-54 max-w-120 w-full p-4 overflow-hidden bg-black border border-white dark:border-white/[0.2] group-hover:border-slate-700 relative z-20">
-            <div className="relative z-50">
+            <div className="relative z-48">
               <div className="p-4">
                 <h4 className="text-zinc-100 font-bold tracking-wide mt-0 text-xl">
                   {item.title}

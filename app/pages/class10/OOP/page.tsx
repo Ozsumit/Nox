@@ -17,7 +17,7 @@ const MyPage = () => {
     // Simulate loading delay
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 700);
 
     return () => clearTimeout(timer);
   }, []);
@@ -90,7 +90,7 @@ const MyPage = () => {
   const pagination = [
     { label: "Home", href: "/" },
     { label: "Class 10", href: "/class10/" },
-    { label: "DBMS", href: "/app/pages/class10/OOP" },
+    { label: "Object Oriented Programming", href: "/app/pages/class10/OOP" },
   ];
 
   return (
@@ -108,7 +108,7 @@ const MyPage = () => {
           />
           {isLoading ? (
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 rounded-5xl">
-              {[...Array(8)].map((_, index) => (
+              {[...Array(6)].map((_, index) => (
                 <Skeleton
                   key={index}
                   height={150}

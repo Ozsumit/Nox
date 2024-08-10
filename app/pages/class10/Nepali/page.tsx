@@ -16,7 +16,7 @@ const MyPage = () => {
     // Simulate loading delay
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 700);
 
     return () => clearTimeout(timer);
   }, []);
@@ -124,11 +124,11 @@ const MyPage = () => {
   const pagination = [
     { label: "Home", href: "/" },
     { label: "Class 10", href: "/class10/" },
-    { label: "DBMS", href: "/app/pages/class10/Nepali" },
+    { label: "Nepali", href: "/app/pages/class10/Nepali" },
   ];
   return (
     <main>
-      <div className="min-h-screen h-auto rounded-md bg-black flex flex-col w-auto px-28 pt-2">
+      <div className=" h-screen rounded-md bg-black flex flex-col w-auto lg:px-28 sm:px-4 pt-2">
         <div className="hero flex justify-center flex-col pt-16 w-auto">
           <Breadcrumb className=" z-10" items={pagination} />
 

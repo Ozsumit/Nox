@@ -4,6 +4,7 @@ export const urlMappings: { [key: string]: string } = {
   "Class 10": "https://example.com/class10",
   "Class 11": "https://example.com/class11",
   "Class 12": "https://example.com/class12",
+  // -------------------------------Class 10 Nepali--------------------------------------------//
   "Ujyalo Yatra": "https://drive.google.com/file/d/1Z64lG2ITvfb2aNBJlXrt4K8YhP51wKf6/preview",
   "Ghar Jhagada": "https://drive.google.com/file/d/1YmzXemiF2mBwAGQpPr9hG3QtKWDqrppD/preview",
   "Chikitsa  bigyaan ra Aayurbed Chikitsa": "https://drive.google.com/file/d/1WYSRwc5U01ywQeRUQRnqlDT2vWc2AxYd/preview",
@@ -17,9 +18,24 @@ export const urlMappings: { [key: string]: string } = {
   "Kartabya": "https://drive.google.com/file/d/1AF9vWf6rjNWv09nGYDouY-awzyTwSCzn/preview",
   "Pablo Picasso": "https://drive.google.com/file/d/1VVYPuPeouRdTfgq2Xkd17lot7tpGHRut/preview",
   "Pakhnos!": "https://drive.google.com/file/d/15lL-_dm4Co6WvHXkjvPKojG9dQfiNif_/preview",
+  // -----------------------Class 10 DBMS------------------------------------------------//
   "Introduction to DBMS  Architecture":"https://drive.google.com/file/d/1QU-VaWXieh87FTl6L4IT4lnRKjtShlb3/preview",
   "Entity Relationship Modal":"https://drive.google.com/file/d/1js4TnHdBednI4xrT72J4YSe59Ab7pzVf/preview",
   "Sequencial Query Language (SQL)":"https://drive.google.com/file/d/1UVPe7phWPIhJJefkVxs49SCd0mIk3eKC/preview",
   "Database Design":"https://drive.google.com/file/d/1k6L9n_2JmAHvURO43qLkXGrQ9Hw1mnwI/preview",
-"Introduction to Object Oriented Programming":"https://drive.google.com/file/d/1Zu8AmqXZtwHmNcn-eR1OEKZFQGlN_qcP/preview",
+// ----------------------------Class 10 OOP-----------------------------------------------//
+  "Introduction to Object Oriented Programming":"https://drive.google.com/file/d/1Zu8AmqXZtwHmNcn-eR1OEKZFQGlN_qcP/preview",
+// ----------------------------------------Class 11 Java-----------------------------------//
+  "Java Fundamentals":"https://drive.google.com/file/d/1D2YexR8QQfiw_UFrdoUNvZt3d_SzKNHd/preview",
+"DataTypes and Variables":"https://drive.google.com/file/d/1ZycAYl6WFxCAL2z6VVf8N90-8go2FxqL/preview",
+"Class And Objects":"https://drive.google.com/file/d/1G6vHabpOtNpDr3sEZqG6gZMpUJEI0LjZ/preview",
+"Control Statements":"https://drive.google.com/file/d/1-XqspA5LChvUxBAtPSGwdpGx6QqBMPEZ/preview",
+//------------------------------Class 11 Wmad---------------------------------------
+"Introduction to Mobile Application":"https://drive.google.com/file/d/1C5VrfI3jtHvP66lsiq3nH3ulrbCwf_bS/preview",
+// ---------------------------Class 11 OS----------------------------------------------------------//
+
+"Introduction to Operating System":"https://drive.google.com/file/d/1SIh7Xo-JBR2g2UOT0wZxeCiq81EBzo8m/preview",
+"Process And Process Sheduling":"https://drive.google.com/file/d/1y13v-Sao4keZk81RLwacq2ZV_ONu0-8X/preview",
+"Deadlock Management":"https://drive.google.com/file/d/1NRlX_4upUlUKX1vnDtG8TCF4bqOl13Vc/preview",
+"Memory Management and Paging":"https://drive.google.com/file/d/1LMVDAsCia6_HSpFhEWSdhrp7ZNfZJiDe/preview",
 };

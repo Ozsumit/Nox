@@ -58,27 +58,27 @@ const MyPage = () => {
   const lessons = [
     {
       title: "Unit 1",
-      description: "Introduction to DBMS  Architecture",
+      description: "Introduction to Mobile Application",
       link: "#pdf",
     },
     {
       title: "Unit 2",
-      description: "Entity Relationship Modal",
-      link: "#pdf",
+      description: "Unavailable",
+      link: "#",
     },
     {
       title: "Unit 3",
-      description: "Sequencial Query Language (SQL)",
-      link: "#pdf",
+      description: "Unavailable",
+      link: "#",
     },
     {
       title: "Unit 4 ",
-      description: "Database Design",
-      link: "#pdf",
+      description: "Unavailable",
+      link: "#",
     },
     {
       title: "Unit 5",
-      description: "Unavailabe",
+      description: "Unavailable",
       link: "#",
     },
     {
@@ -89,8 +89,8 @@ const MyPage = () => {
   ];
   const pagination = [
     { label: "Home", href: "/" },
-    { label: "Class 10", href: "/class10/" },
-    { label: "DBMS", href: "/app/pages/class10/DBMS" },
+    { label: "Class 11", href: "/class11/" },
+    { label: "WMAD", href: "/app/pages/class11/WMAD" },
   ];
 
   return (
