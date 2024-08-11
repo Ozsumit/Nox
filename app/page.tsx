@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import { ThemeProvider } from "next-themes";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 // import Navigation from "@/components/ui/Navigation";
 // import { FloatingNav } from "@/components/ui/floating-navbar";

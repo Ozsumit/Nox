@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-color: #000;
+  --background-color: #fff;
+  --text-color: #000;
+  /* Add more variables as needed */
+}
+
+[data-theme="dark"] {
+  --primary-color: #fff;
+  --background-color: #080808;
+  --text-color: #fff;
+}
+
+[data-theme="light"] {
+  --primary-color: #000;
+  --background-color: #fff;
+  --text-color: #000;
+}
+
 body {
   scroll-behavior: smooth;
   scrollbar-width: none;

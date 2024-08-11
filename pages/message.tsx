@@ -5,18 +5,17 @@ import emailjs from "@emailjs/browser";
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "../components/styles/contact.module.css";
+import { toast } from "sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
 const ContactUs: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<string | null>(null);
 
   const sendEmail = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setIsSubmitting(true);
-    setSubmitStatus(null);
 
     if (
       !process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ||
@@ -24,25 +23,37 @@ const ContactUs: React.FC = () => {
       !process.env.NEXT_PUBLIC_EMAILJS_USER_ID ||
       !form.current
     ) {
-      setSubmitStatus("Configuration error. Please try again later.");
+      toast("Configuration error. Please try again later.");
       setIsSubmitting(false);
       return;
     }
 
     try {
-      const result = await emailjs.sendForm(
+      await emailjs.sendForm(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         form.current,
         process.env.NEXT_PUBLIC_EMAILJS_USER_ID
       );
-      setSubmitStatus("Message sent successfully!");
+      // toast("Message Sent Successfully");
+      toast("Message Sent", {
+        description: "Message has been sent succesfully to the dev.",
+        action: {
+          label: "Close",
+          onClick: () => console.log("closed motherfucker"),
+        },
+      });
       form.current.reset();
     } catch (error) {
-      setSubmitStatus(`Failed to send message: ${(error as Error).message}`);
+      toast(`Failed to send message: ${(error as Error).message}`);
     } finally {
       setIsSubmitting(false);
     }
+  };
+
+  // Define the HEL function
+  const HEL = () => {
+    toast("Alert!");
   };
 
   return (
@@ -101,7 +112,9 @@ const ContactUs: React.FC = () => {
             {isSubmitting ? "Sending..." : "Send"}
           </button>
         </form>
-        {submitStatus && <p className={styles.statusMessage}>{submitStatus}</p>}
+        <button onClick={HEL} className=" bg-white mt-7">
+          Trigger Alert
+        </button>
       </div>
     </>
   );

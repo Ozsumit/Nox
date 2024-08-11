@@ -4,6 +4,7 @@ import "./globals.css";
 import Image from "next/image";
 const inter = Inter({ subsets: ["latin"] });
 import logo from "../components/image/logo.svg";
+import { Toaster } from "sonner";
 export const metadata: Metadata = {
   title: "Nox",
   description: "Need help with your homework?? I gotchu",
@@ -57,6 +58,7 @@ export default function RootLayout({
           </div>
         </div>
         {children}
+        <Toaster />
       </body>
     </html>
   );
