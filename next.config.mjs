@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // basePath: "/Nox",
+  basePath: "/Nox",
 
   reactStrictMode: true,
   images: { unoptimized: true },
