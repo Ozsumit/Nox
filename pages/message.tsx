@@ -1,37 +1,47 @@
 "use client";
-import React, { useRef } from "react";
+
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "../components/styles/contact.module.css";
+
 const inter = Inter({ subsets: ["latin"] });
 
-const ContactUs = () => {
-  const form = useRef(null);
+const ContactUs: React.FC = () => {
+  const form = useRef<HTMLFormElement>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<string | null>(null);
 
-  const sendEmail = (event: React.FormEvent<HTMLFormElement>) => {
+  const sendEmail = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
     if (
-      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID &&
-      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID &&
-      process.env.NEXT_PUBLIC_EMAILJS_USER_ID &&
-      form.current
+      !process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ||
+      !process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ||
+      !process.env.NEXT_PUBLIC_EMAILJS_USER_ID ||
+      !form.current
     ) {
-      emailjs
-        .sendForm(
-          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-          form.current,
-          process.env.NEXT_PUBLIC_EMAILJS_USER_ID
-        )
-        .then(
-          (result) => {
-            alert("Message sent succesfully");
-          },
-          (error) => {
-            alert(error.text);
-          }
-        );
+      setSubmitStatus("Configuration error. Please try again later.");
+      setIsSubmitting(false);
+      return;
+    }
+
+    try {
+      const result = await emailjs.sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        form.current,
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+      );
+      setSubmitStatus("Message sent successfully!");
+      form.current.reset();
+    } catch (error) {
+      setSubmitStatus(`Failed to send message: ${(error as Error).message}`);
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -54,7 +64,7 @@ const ContactUs = () => {
             <input
               type="text"
               id="user_name"
-              name="user_name"
+              name="name"
               required
               placeholder="Gojo Satoru"
             />
@@ -83,10 +93,15 @@ const ContactUs = () => {
               placeholder="Nah, I'd win"
             />
           </div>
-          <button className={styles.button} type="submit">
-            Send
+          <button
+            className={styles.button}
+            type="submit"
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? "Sending..." : "Send"}
           </button>
         </form>
+        {submitStatus && <p className={styles.statusMessage}>{submitStatus}</p>}
       </div>
     </>
   );
