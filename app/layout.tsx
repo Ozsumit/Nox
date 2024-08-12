@@ -51,7 +51,7 @@ export default function RootLayout({
               <a className=" font-mono" href="./contact">
                 Contact{" "}
               </a>
-              <a className=" border-none font-mono" href=".">
+              <a className=" border-none font-mono" href="./Dev">
                 Dev{" "}
               </a>
             </div>
