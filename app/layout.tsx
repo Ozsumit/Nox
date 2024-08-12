@@ -38,7 +38,7 @@ export default function RootLayout({
               <a className=" font-mono" href="./contact">
                 Contact{" "}
               </a>
-              <a className=" font-mono" href=".">
+              <a className=" font-mono" href="./Dev">
                 Dev
               </a>
               <div className="w-1 hidden"></div>
