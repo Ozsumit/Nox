@@ -11,7 +11,9 @@ const config: Config = {
     extend: {
       colors: {
      'grays':'#1F2020',
-     'bgblack':'#0F0F0F'
+     'bgblack':'#0F0F0F',
+     'accent':'#c9b4b3',
+     'accenth':'#c9b4c7',
       },
       spacing: {
         '128': '32rem',

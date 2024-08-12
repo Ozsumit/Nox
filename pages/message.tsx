@@ -6,16 +6,19 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "../components/styles/contact.module.css";
 import { toast } from "sonner";
+import CompanyInfo from "../components/ui/socials";
 
 const inter = Inter({ subsets: ["latin"] });
 
 const ContactUs: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
   const sendEmail = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setIsSubmitting(true);
+    setIsButtonDisabled(true);
 
     if (
       !process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ||
@@ -25,6 +28,7 @@ const ContactUs: React.FC = () => {
     ) {
       toast("Configuration error. Please try again later.");
       setIsSubmitting(false);
+      setIsButtonDisabled(false);
       return;
     }
 
@@ -35,9 +39,8 @@ const ContactUs: React.FC = () => {
         form.current,
         process.env.NEXT_PUBLIC_EMAILJS_USER_ID
       );
-      // toast("Message Sent Successfully");
-      toast("Message Sent", {
-        description: "Message has been sent succesfully to the dev.",
+      toast("Message Sent To Dev Succesfully", {
+        description: "You cannot send another message for 1 minute.",
         action: {
           label: "Close",
           onClick: () => console.log("closed motherfucker"),
@@ -48,6 +51,11 @@ const ContactUs: React.FC = () => {
       toast(`Failed to send message: ${(error as Error).message}`);
     } finally {
       setIsSubmitting(false);
+
+      // Set a timeout to re-enable the button after 1 minute
+      setTimeout(() => {
+        setIsButtonDisabled(false);
+      }, 120000);
     }
   };
 
@@ -67,52 +75,66 @@ const ContactUs: React.FC = () => {
       </Head>
       <div className={`${styles.main} ${inter.className}`}>
         <h1>Contact Us</h1>
-        <form ref={form} onSubmit={sendEmail} className={styles.form}>
-          <div className={styles.formGroup}>
-            <label className={styles.label} htmlFor="user_name">
-              Name
-            </label>
-            <input
-              type="text"
-              id="user_name"
-              name="name"
-              required
-              placeholder="Gojo Satoru"
-            />
-          </div>
-          <div className={styles.formGroup}>
-            <label className={styles.label} htmlFor="email">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              placeholder="Satorugojo21@gmail.com"
-            />
-          </div>
-          <div className={styles.formGroup}>
-            <label className={styles.label} htmlFor="message">
-              Message
-            </label>
-            <textarea
-              rows={8}
-              id="message"
-              name="message"
-              required
-              placeholder="Nah, I'd win"
-            />
-          </div>
-          <button
-            className={styles.button}
-            type="submit"
-            disabled={isSubmitting}
+        <div className={styles.contactContainer}>
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="w-11/12 lg:w-96 z-50 shadow-[0px_0px_20px_4px_#1a202c] flex flex-col justify-center bg-black border border-white dark:border-white/[0.2] p-8 rounded-2xl"
           >
-            {isSubmitting ? "Sending..." : "Send"}
-          </button>
-        </form>
-      
+            <div className={styles.formGroup}>
+              <label className={styles.label} htmlFor="user_name">
+                Name
+              </label>
+              <input
+                type="text"
+                id="user_name"
+                autoComplete="off"
+                name="name"
+                required
+                placeholder="Gojo Satoru"
+              />
+            </div>
+            <div className={styles.formGroup}>
+              <label className={styles.label} htmlFor="email">
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                autoComplete="off"
+                name="email"
+                required
+                placeholder="Satorugojo21@gmail.com"
+              />
+            </div>
+            <div className={styles.formGroup}>
+              <label className={styles.label} htmlFor="message">
+                Message
+              </label>
+              <textarea
+                rows={8}
+                id="message"
+                name="message"
+                required
+                placeholder="Nah, I'd win"
+              />
+            </div>
+            <button
+              className={`bg-accent w-6/12 self-center h-14 rounded-md text-black hover:bg-accenth hover:shadow-[0px_0px_95px_10px_#c9b4b334] transition-all duration-500 ease-linear hover:text-slate-900 ${
+                isButtonDisabled ? "opacity-50 cursor-not-allowed" : ""
+              }`}
+              type="submit"
+              disabled={isSubmitting || isButtonDisabled}
+            >
+              {isSubmitting
+                ? "Sending..."
+                : isButtonDisabled
+                ? "Wait for a minute"
+                : "Send"}
+            </button>
+          </form>
+          <CompanyInfo />
+        </div>
       </div>
     </>
   );
