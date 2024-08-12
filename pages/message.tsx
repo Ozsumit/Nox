@@ -74,12 +74,16 @@ const ContactUs: React.FC = () => {
         <meta name="author" content="ali" />
       </Head>
       <div className={`${styles.main} ${inter.className}`}>
-        <h1>Contact Us</h1>
+        <h2 className="relative flex-row justify-center items-center md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl  text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex  gap-2 sm:mx-4 md:gap-8 mb-8">
+          {/* <span>The Repo</span>
+            <span className="text-white text-lg font-thin">x</span> */}
+          <span>Contact Us</span>
+        </h2>
         <div className={styles.contactContainer}>
           <form
             ref={form}
             onSubmit={sendEmail}
-            className="w-11/12 lg:w-96 z-50 shadow-[0px_0px_20px_4px_#1a202c] flex flex-col justify-center bg-black border border-white dark:border-white/[0.2] p-8 rounded-2xl"
+            className="w-11/12  lg:w-128 z-50 shadow-[0px_0px_20px_4px_#1a202c] flex flex-col justify-center bg-black border border-white dark:border-white/[0.2] p-8 rounded-2xl"
           >
             <div className={styles.formGroup}>
               <label className={styles.label} htmlFor="user_name">

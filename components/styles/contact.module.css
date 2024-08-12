@@ -82,7 +82,7 @@
   flex-direction: column;
   align-items: center;
   /* :2rem ; */
-  min-height: 100vh;
+  min-height: auto;
 }
 
 .contactContainer {
@@ -93,6 +93,9 @@
   gap: 2rem;
   width: 100%;
   max-width: 1200px;
+}
+.contactContainer h1 {
+  color: #007bff;
 }
 
 @media (max-width: 768px) {
