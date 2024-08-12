@@ -112,9 +112,7 @@ const ContactUs: React.FC = () => {
             {isSubmitting ? "Sending..." : "Send"}
           </button>
         </form>
-        <button onClick={HEL} className=" bg-white mt-7">
-          Trigger Alert
-        </button>
+      
       </div>
     </>
   );
