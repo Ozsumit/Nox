@@ -1,4 +1,4 @@
-import Hero from "@/components/Hero";
+// import Hero from "@/components/Hero";
 import { ThemeProvider } from "next-themes";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 // import Navigation from "@/components/ui/Navigation";
@@ -18,12 +18,12 @@ const MyPage = () => {
     {
       title: "Class 10",
       description: "Available",
-      link: "/class10/",
+      link: "/class10",
     },
     {
       title: "Class 11",
       description: "Available",
-      link: "/class11/",
+      link: "/class11",
     },
     {
       title: "Class 12",

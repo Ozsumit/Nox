@@ -2,7 +2,7 @@
 // import { useState, FormEvent } from "react";
 import React, { useState, useEffect, FormEvent } from "react";
 
-import Hero from "@/components/Hero";
+// import Hero from "@/components/Hero";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import Link from "next/link";
 import { ShootingStars } from "@/components/ui/shooting-stars";
@@ -14,6 +14,8 @@ import Iframe from "@/components/ui/iframe";
 import PersonCard from "@/components/ui/devs";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import GithubReadme from "@/components/ui/readme";
+import DeveloperNote from "@/components/ui/readme";
 // import React, { useState, useEffect } from "react";
 
 // import { Button } from "@/components/ui/button"; // Assuming you have a Button component
@@ -241,6 +243,7 @@ const MyPage = () => {
               email="john@example.com"
             />
           </div>
+          <DeveloperNote />
 
           <HoverEffect
             items={items}

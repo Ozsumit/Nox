@@ -1,4 +1,4 @@
-import Hero from "@/components/Hero";
+// import Hero from "@/components/Hero";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 // import Navigation from "@/components/ui/Navigation";
 // import { FloatingNav } from "@/components/ui/floating-navbar";
@@ -61,8 +61,6 @@ const MyPage = () => {
     <main>
       <div className=" h-screen rounded-md bg-black flex flex-col w-auto lg:px-28 sm:px-4 pt-2">
         <div className="hero flex justify-center  flex-col lg:pt-16 sm:pt-0 w-auto sm:border-t-0 sm:border-t-white">
-          
-
           {/* <ContactUs />? */}
           <ContactUs />
           <ShootingStars />
