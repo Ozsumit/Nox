@@ -46,13 +46,13 @@ export default function RootLayout({
 
             <div className="w-1 hidden lg:flex"></div>
             <div className=" nav2 md:hidden lg:hidden flex-row flex justify-center  border-l border-white dark:border-white/[0.2] items-center py-3 group-hover:border-slate-70">
-              <a className=" font-mono" href=".">
+              <a className=" font-mono" href="/">
                 Home
               </a>
-              <a className=" font-mono" href="./contact">
+              <a className=" font-mono" href="/contact">
                 Contact{" "}
               </a>
-              <a className=" border-none font-mono" href="./Dev">
+              <a className=" border-none font-mono" href="/Dev">
                 Dev{" "}
               </a>
             </div>
