@@ -95,7 +95,7 @@ const MyPage = () => {
 
   return (
     <main>
-      <div className="min-h-screen h-auto rounded-md bg-black flex flex-col w-auto px-28 pt-2">
+      <div className=" h-screen rounded-md bg-black flex flex-col w-auto lg:px-28 sm:px-4 pt-2">
         <div className="hero flex justify-center flex-col pt-16 w-auto">
           <Breadcrumb className=" z-10" items={pagination} />
 

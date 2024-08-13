@@ -24,7 +24,7 @@ const MyPage = () => {
   const items = [
     {
       title: "Class 9",
-      description: "Unavailable!!",
+      description: "*Unavailable!!*",
       link: "##",
     },
     {
@@ -47,7 +47,7 @@ const MyPage = () => {
   const subs = [
     {
       title: "Java",
-      description: "Unavailable!!",
+      description: "Available",
       link: "/pages/class11/Javaa",
     },
     {
