@@ -31,18 +31,19 @@ export default function RootLayout({
                 className="mb-4 "
               />
             </a>
-            <div className=" nav hidden md:flex lg:flex border border-white dark:border-white/[0.2] group-hover:border-slate-70">
-              <a className=" font-mono" href=".">
+            <div className="z-50 text-white nav hidden md:flex lg:flex border border-white dark:border-white/[0.2] group-hover:border-slate-70 items-center justify-around px-4 py-2 rounded-md">
+              <a className="font-mono" href=".">
                 Home
               </a>
-              <a className=" font-mono" href="./contact">
-                Contact{" "}
+              <a className="font-mono" href="./contact">
+                Contact
               </a>
-              <a className=" font-mono" href="./Dev">
+              <a className="font-mono" href="./Dev">
                 Dev
               </a>
               <div className="w-1 hidden"></div>
             </div>
+
             <div className="w-1 hidden lg:flex"></div>
             <div className=" nav2 md:hidden lg:hidden flex-row flex justify-center  border-l border-white dark:border-white/[0.2] items-center py-3 group-hover:border-slate-70">
               <a className=" font-mono" href=".">

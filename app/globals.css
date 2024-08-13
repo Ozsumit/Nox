@@ -8,6 +8,11 @@
   --text-color: #000;
   /* Add more variables as needed */
 }
+.clipbg{
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
 
 [data-theme="dark"] {
   --primary-color: #fff;
