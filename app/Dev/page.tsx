@@ -248,7 +248,7 @@ const MyPage = () => {
               imageUrl="https://scontent.fbdp2-1.fna.fbcdn.net/v/t39.30808-1/431194581_1133917127803595_9059297124589359905_n.jpg?stp=dst-jpg_p200x200&_nc_cat=110&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeEPaleCy_nbjfqQxuPzMCmKFIfefya2wSAUh95_JrbBID1h6LtRCXhPiZI2VlnMmzF0nGcVVVBDd0HjoCx6CQ-t&_nc_ohc=KNmDz10e564Q7kNvgFib0J9&_nc_ht=scontent.fbdp2-1.fna&oh=00_AYAp2TQNNSYm2xmgTqYl0gI-8TGQAEonTppS46EdX7TNtw&oe=66C22DF8"
               // linkedin="https://www.linkedin.com/in/johndoe"
               Instagram="https://www.instagram.com/alish_gautam11/"
-              github="#"
+              github="https://www.github.com/AZalish"
               email="#"
             />
             <PersonCard
