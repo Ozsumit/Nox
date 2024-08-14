@@ -218,7 +218,7 @@ const MyPage = () => {
             <PersonCard
               name="Sumit Pokhrel"
               role="Developer"
-              imageUrl="/images/sumit2.jpg"
+              imageUrl="./images/sumit2.jpg"
               linkedin="https://www.linkedin.com/in/johndoe"
               Instagram="https://twitter.com/johndoe"
               github="https://github.com/johndoe"
@@ -227,8 +227,8 @@ const MyPage = () => {
             <PersonCard
               name="Denisha Adhikari"
               role="Contributer: Nepali/Wmad/Os"
-              imageUrl="/images/denisa.jpeg"
-              // imageUrl="https://scontent.fbdp2-1.fna.fbcdn.net/v/t39.30808-6/444457997_504318481923855_7156661299963435710_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFJv9rPmHP1-c-CVEq8GyMGOrCuk2n2mDE6sK6TafaYMbfF9YKbMBXDdib7TJAusYrbcxMcNjbrVrpkUy_paX8L&_nc_ohc=WelJYflIYWoQ7kNvgGgDGR1&_nc_ht=scontent.fbdp2-1.fna&oh=00_AYAlQ0ChYCiFcAY6YcqsrpVuiyqLEjwUlWpqyzjFV_AKWg&oe=66C22E49"
+              imageUrl="./images/denisa.jpeg"
+              // imageUrl=".https://scontent.fbdp2-1.fna.fbcdn.net/v/t39.30808-6/444457997_504318481923855_7156661299963435710_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFJv9rPmHP1-c-CVEq8GyMGOrCuk2n2mDE6sK6TafaYMbfF9YKbMBXDdib7TJAusYrbcxMcNjbrVrpkUy_paX8L&_nc_ohc=WelJYflIYWoQ7kNvgGgDGR1&_nc_ht=scontent.fbdp2-1.fna&oh=00_AYAlQ0ChYCiFcAY6YcqsrpVuiyqLEjwUlWpqyzjFV_AKWg&oe=66C22E49"
               // linkedin="https://www.linkedin.com/in/johndoe"
               Instagram="https://twitter.com/johndoe"
               github="https://github.com/johndoe"
@@ -237,7 +237,7 @@ const MyPage = () => {
             <PersonCard
               name="Diya Bhattarai"
               role="Developer: Bug Tester"
-              imageUrl="/images/diya.jpg"
+              imageUrl="./images/diya.jpg"
               // linkedin="https://www.linkedin.com/in/johndoe"
               Instagram="https://www.instagram.com/_diya_bhattarai_/"
               github="#"
@@ -246,7 +246,7 @@ const MyPage = () => {
             <PersonCard
               name="Alish Gautam"
               role="Developer: Bug Tester"
-              imageUrl="/images/alish.jpg"
+              imageUrl="./images/alish.jpg"
               // linkedin="https://www.linkedin.com/in/johndoe"
               Instagram="https://www.instagram.com/alish_gautam11/"
               github="https://www.github.com/AZalish"
@@ -255,7 +255,7 @@ const MyPage = () => {
             <PersonCard
               name="Pratik Timsina"
               role="Contributer: Nepali/Wmad/Os"
-              imageUrl="/images/pratik.png"
+              imageUrl="./images/pratik.png"
               // linkedin="https://www.linkedin.com/in/johndoe"
               Instagram="https://twitter.com/johndoe"
               github="https://github.com/johndoe"
@@ -264,7 +264,7 @@ const MyPage = () => {
             <PersonCard
               name="Smarika Nepal"
               role="Contributer: Nepali/Wmad/Os"
-              imageUrl="/images/female.png"
+              imageUrl="./images/female.png"
               // linkedin="https://www.linkedin.com/in/johndoe"
               Instagram="#"
               github="#"
