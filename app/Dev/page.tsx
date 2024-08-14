@@ -213,7 +213,7 @@ const MyPage = () => {
             <span>Contributors</span>
           </h2>
           <ShootingStars />
-          <StarsBackground />
+          <StarsBackground className="bg-exxl" />
           <div className="devs flex flex-wrap gap-6 my-6 justify-start">
             <PersonCard
               name="Sumit Pokhrel"
