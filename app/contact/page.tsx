@@ -3,6 +3,8 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 // import Navigation from "@/components/ui/Navigation";
 // import { FloatingNav } from "@/components/ui/floating-navbar";
 import Link from "next/link";
+import Image from "next/image";
+
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 import Image from "next/image";
