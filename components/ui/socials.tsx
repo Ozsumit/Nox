@@ -17,7 +17,7 @@ const CompanyInfo: React.FC = () => {
       <div className="flex flex-row gap-2   items-center mb-4">
         <Link href="https://sumit.info.np/">
           <Image
-            src="/images/brandicon.svg"
+            src="./images/brandicon.svg"
             alt="lpgp"
             height={60}
             width={60}
