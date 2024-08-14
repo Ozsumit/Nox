@@ -214,7 +214,7 @@ const MyPage = () => {
           </h2>
           <ShootingStars />
           <StarsBackground className=" h-exxl" />
-          <div className="devs flex flex-wrap gap-6  my-6 justify-between">
+          <div className="devs flex flex-wrap gap-4  my-6 justify-between">
             <PersonCard
               name="Sumit Pokhrel"
               role="Developer"
