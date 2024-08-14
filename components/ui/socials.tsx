@@ -26,20 +26,7 @@ const CompanyInfo: React.FC = () => {
         >
           <FaFacebook />
         </a>
-        <a
-          href="https://sumit.info.np/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-            <Image
-                priority
-                width={10}
-                height={10}
-                src="https://sumit.info.np/brandicon.svg"
-                alt="Follow us on Twitter"
-                className="mb-4 "
-              />
-        </a>
+
         <a
           href="https://github.com/ozsumit"
           target="_blank"
