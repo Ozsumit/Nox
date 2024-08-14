@@ -7,7 +7,7 @@ import Image from "next/image";
 
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
-import Image from "next/image";
+// import Image from "next/image";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 // import MessageBox from "@/components/ui/messagebox";
 import ContactUs from "@/pages/message";
