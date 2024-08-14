@@ -227,7 +227,7 @@ const MyPage = () => {
             <PersonCard
               name="Denisha Adhikari"
               role="Contributer: Nepali/Wmad/Os"
-              imageUrl="/images/denisa.jpg"
+              imageUrl="/images/denisa.jpeg"
               // imageUrl="https://scontent.fbdp2-1.fna.fbcdn.net/v/t39.30808-6/444457997_504318481923855_7156661299963435710_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFJv9rPmHP1-c-CVEq8GyMGOrCuk2n2mDE6sK6TafaYMbfF9YKbMBXDdib7TJAusYrbcxMcNjbrVrpkUy_paX8L&_nc_ohc=WelJYflIYWoQ7kNvgGgDGR1&_nc_ht=scontent.fbdp2-1.fna&oh=00_AYAlQ0ChYCiFcAY6YcqsrpVuiyqLEjwUlWpqyzjFV_AKWg&oe=66C22E49"
               // linkedin="https://www.linkedin.com/in/johndoe"
               Instagram="https://twitter.com/johndoe"
