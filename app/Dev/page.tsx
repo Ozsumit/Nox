@@ -227,6 +227,15 @@ const MyPage = () => {
             <PersonCard
               name="Denisha Adhikari"
               role="Contributer: Nepali/Wmad/Os"
+              imageUrl=".fktm1-1.fna.fbcdn.net/v/t39.30808-6/444457997_504318481923855_7156661299963435710_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFJv9rPmHP1-c-CVEq8GyMGOrCuk2n2mDE6sK6TafaYMbfF9YKbMBXDdib7TJAusYrbcxMcNjbrVrpkUy_paX8L&_nc_ohc=V0cv-Jn1nQoQ7kNvgGx67mT&_nc_ht=scontent.fktm1-1.fna&oh=00_AYCwPXdjMhFBWFtkiZGBEGwqGMuypnqmlKQfanFySI63XA&oe=66BFFBC9"
+              // linkedin="https://www.linkedin.com/in/johndoe"
+              Instagram="https://twitter.com/johndoe"
+              github="https://github.com/johndoe"
+              email="john@example.com"
+            />
+             <PersonCard
+              name="Diya Bhattarai"
+              role="Developer: Bug Tester"
               imageUrl="https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-6/444457997_504318481923855_7156661299963435710_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFJv9rPmHP1-c-CVEq8GyMGOrCuk2n2mDE6sK6TafaYMbfF9YKbMBXDdib7TJAusYrbcxMcNjbrVrpkUy_paX8L&_nc_ohc=V0cv-Jn1nQoQ7kNvgGx67mT&_nc_ht=scontent.fktm1-1.fna&oh=00_AYCwPXdjMhFBWFtkiZGBEGwqGMuypnqmlKQfanFySI63XA&oe=66BFFBC9"
               // linkedin="https://www.linkedin.com/in/johndoe"
               Instagram="https://twitter.com/johndoe"
