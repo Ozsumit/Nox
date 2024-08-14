@@ -18,7 +18,8 @@ const config: Config = {
       spacing: {
         '128': '32rem',
         '144': '36rem',
-        'exl':'100vh'
+        'exl':'100vh',
+        'exl':'200vh'
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
