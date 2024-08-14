@@ -11,6 +11,7 @@ import { StarsBackground } from "@/components/ui/stars-background";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 // import MessageBox from "@/components/ui/messagebox";
 import ContactUs from "@/pages/message";
+// import CompanyDetails from "@/components/ui/company";
 // import MessageBox, { ContactUs } from "@/components/ui/messagebox";
 
 const MyPage = () => {
@@ -65,6 +66,8 @@ const MyPage = () => {
         <div className="hero flex justify-center  flex-col lg:pt-16 sm:pt-0 w-auto sm:border-t-0 sm:border-t-white">
           {/* <ContactUs />? */}
           <ContactUs />
+           
+       
           <ShootingStars />
           <StarsBackground />
         </div>
