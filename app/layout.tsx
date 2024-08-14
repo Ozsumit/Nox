@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className="  fadefromblack opacity-0 h-screen rounded-md bg-black flex flex-col w-auto px-4 pt-2 scroll-smooth">
         <div className=" ">
           <div className="navigation flex justify-between items-center text-2xl">
-            <a href="/" className="logoxdc">
+            <Link href="/" className="logoxdc w-auto h-auto z-50">
               <Image
                 priority
                 width={100}
@@ -31,7 +31,7 @@ export default function RootLayout({
                 alt="Follow us on Twitter"
                 className="mb-4 "
               />
-            </a>
+            </Link>
             <div className="z-50 text-white nav hidden md:flex lg:flex border border-white dark:border-white/[0.2] group-hover:border-slate-70 items-center justify-around px-4 py-2 rounded-md">
               <Link href="/" className="font-mono">
                 Home
@@ -47,15 +47,15 @@ export default function RootLayout({
 
             <div className="w-1 hidden lg:flex"></div>
             <div className=" nav2 md:hidden lg:hidden flex-row flex justify-center  border-l border-white dark:border-white/[0.2] items-center py-3 group-hover:border-slate-70">
-              <a className=" font-mono" href="//">
+              <Link href="/" className="font-mono">
                 Home
-              </a>
-              <a className=" font-mono" href="//contact">
-                Contact{" "}
-              </a>
-              <a className=" border-none font-mono" href="//Dev">
-                Dev{" "}
-              </a>
+              </Link>
+              <Link href="/contact" className="font-mono">
+                Contact
+              </Link>
+              <Link href="/Dev" className="font-mono">
+                Dev
+              </Link>
             </div>
           </div>
         </div>

@@ -47,7 +47,7 @@ const MyPage = () => {
   const subs = [
     {
       title: "Nepali",
-      description: "Unavailable!!",
+      description: "Available",
       link: "/pages/class10/Nepali",
     },
     {
@@ -130,12 +130,12 @@ const MyPage = () => {
             // onCardClick={handleCardClick}
           />
           {isLoading ? (
-            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 rounded-5xl">
+            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8 gap-4 rounded-3xl">
               {[...Array(4)].map((_, index) => (
                 <Skeleton
                   key={index}
                   height={150}
-                  className="mb-4 rounded-7xl"
+                  className="mb-4 rounded-7xl "
                   baseColor="#090909"
                   highlightColor="#444"
                 />
