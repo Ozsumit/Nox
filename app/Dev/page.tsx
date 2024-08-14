@@ -238,9 +238,18 @@ const MyPage = () => {
               role="Developer: Bug Tester"
               imageUrl="https://scontent.fbdp2-1.fna.fbcdn.net/v/t39.30808-1/445209161_538006485217777_8184701847077570562_n.jpg?stp=dst-jpg_p200x200&_nc_cat=102&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeHat8DM2mXfjZO-V7mmnaf_bE8H8JdJBCpsTwfwl0kEKu2C4MmBnSdTngCYVLO2QL75E3nCmgPi4tSi3qvi7ajS&_nc_ohc=vjyCgCBiKVAQ7kNvgHgSpx5&_nc_ht=scontent.fbdp2-1.fna&oh=00_AYBnXtnzhM-fnrRwyll9ZdO8pddg88MCRnV0GxeeIG7AZg&oe=66C24A5C"
               // linkedin="https://www.linkedin.com/in/johndoe"
-              Instagram="https://twitter.com/johndoe"
-              github="https://github.com/johndoe"
-              email="john@example.com"
+              Instagram="https://www.instagram.com/_diya_bhattarai_/"
+              github="#"
+              email="#"
+            />
+             <PersonCard
+              name="Alish Gautam"
+              role="Developer: Bug Tester"
+              imageUrl="https://scontent.fbdp2-1.fna.fbcdn.net/v/t39.30808-1/431194581_1133917127803595_9059297124589359905_n.jpg?stp=dst-jpg_p200x200&_nc_cat=110&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeEPaleCy_nbjfqQxuPzMCmKFIfefya2wSAUh95_JrbBID1h6LtRCXhPiZI2VlnMmzF0nGcVVVBDd0HjoCx6CQ-t&_nc_ohc=KNmDz10e564Q7kNvgFib0J9&_nc_ht=scontent.fbdp2-1.fna&oh=00_AYAp2TQNNSYm2xmgTqYl0gI-8TGQAEonTppS46EdX7TNtw&oe=66C22DF8"
+              // linkedin="https://www.linkedin.com/in/johndoe"
+              Instagram="https://www.instagram.com/alish_gautam11/"
+              github="#"
+              email="#"
             />
             <PersonCard
               name="Pratik Timsina"
