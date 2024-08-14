@@ -15,7 +15,11 @@ const CompanyInfo: React.FC = () => {
     >
       {/* Company Logo and Name */}
       <div className="flex flex-row gap-2   items-center mb-4">
-        <Link href="https://sumit.info.np/">
+        <Link
+          className="Image flex flex-row  items-center 
+        "
+          href="https://sumit.info.np/"
+        >
           <Image
             src="./images/brandicon.svg"
             alt="lpgp"
