@@ -249,7 +249,7 @@ const MyPage = () => {
               // linkedin="https://www.linkedin.com/in/johndoe"
               Instagram="https://www.instagram.com/alish_gautam11/"
               github="https://www.github.com/AZalish"
-              email="#"
+              email="alishgautam27@gmail.com"
             />
             <PersonCard
               name="Pratik Timsina"
@@ -258,6 +258,15 @@ const MyPage = () => {
               // linkedin="https://www.linkedin.com/in/johndoe"
               Instagram="https://twitter.com/johndoe"
               github="https://github.com/johndoe"
+              email="john@example.com"
+            />
+            <PersonCard
+              name="Smarika Nepal"
+              role="Contributer: Nepali/Wmad/Os"
+              imageUrl="https://scontent.fbdp2-1.fna.fbcdn.net/v/t1.30497-1/453178253_471506465671661_2781666950760530985_n.png?stp=dst-png_p200x200&_nc_cat=1&ccb=1-7&_nc_sid=136b72&_nc_eui2=AeHcTQRt_r3Ns7AGMEm81rW7Wt9TLzuBU1Ba31MvO4FTUPflWM9uRDJlTBNL_SNWWX9X67rNSSTLmbE5HkCJnY9H&_nc_ohc=kWxeXr9no-YQ7kNvgGgZpzB&_nc_ht=scontent.fbdp2-1.fna&oh=00_AYA0zxvy75dwp0DW1bOjvyqF38_1Qdjam6-7qonhMdz_PQ&oe=66E3FDBA"
+              // linkedin="https://www.linkedin.com/in/johndoe"
+              Instagram="#"
+              github="#"
               email="john@example.com"
             />
           </div>
