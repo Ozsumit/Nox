@@ -213,8 +213,8 @@ const MyPage = () => {
             <span>Contributors</span>
           </h2>
           <ShootingStars />
-          <StarsBackground />
-          <div className="devs flex flex-wrap gap-6 my-6 justify-center">
+          <StarsBackground className=" h-exxl" />
+          <div className="devs flex flex-wrap gap-6  my-6 justify-start">
             <PersonCard
               name="Sumit Pokhrel"
               role="Developer"
@@ -227,11 +227,29 @@ const MyPage = () => {
             <PersonCard
               name="Denisha Adhikari"
               role="Contributer: Nepali/Wmad/Os"
-              imageUrl="https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-6/444457997_504318481923855_7156661299963435710_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFJv9rPmHP1-c-CVEq8GyMGOrCuk2n2mDE6sK6TafaYMbfF9YKbMBXDdib7TJAusYrbcxMcNjbrVrpkUy_paX8L&_nc_ohc=V0cv-Jn1nQoQ7kNvgGx67mT&_nc_ht=scontent.fktm1-1.fna&oh=00_AYCwPXdjMhFBWFtkiZGBEGwqGMuypnqmlKQfanFySI63XA&oe=66BFFBC9"
+              imageUrl="https://scontent.fbdp2-1.fna.fbcdn.net/v/t39.30808-6/444457997_504318481923855_7156661299963435710_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFJv9rPmHP1-c-CVEq8GyMGOrCuk2n2mDE6sK6TafaYMbfF9YKbMBXDdib7TJAusYrbcxMcNjbrVrpkUy_paX8L&_nc_ohc=WelJYflIYWoQ7kNvgGgDGR1&_nc_ht=scontent.fbdp2-1.fna&oh=00_AYAlQ0ChYCiFcAY6YcqsrpVuiyqLEjwUlWpqyzjFV_AKWg&oe=66C22E49"
               // linkedin="https://www.linkedin.com/in/johndoe"
               Instagram="https://twitter.com/johndoe"
               github="https://github.com/johndoe"
               email="john@example.com"
+            />
+            <PersonCard
+              name="Diya Bhattarai"
+              role="Developer: Bug Tester"
+              imageUrl="https://scontent.fbdp2-1.fna.fbcdn.net/v/t39.30808-1/445209161_538006485217777_8184701847077570562_n.jpg?stp=dst-jpg_p200x200&_nc_cat=102&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeHat8DM2mXfjZO-V7mmnaf_bE8H8JdJBCpsTwfwl0kEKu2C4MmBnSdTngCYVLO2QL75E3nCmgPi4tSi3qvi7ajS&_nc_ohc=vjyCgCBiKVAQ7kNvgHgSpx5&_nc_ht=scontent.fbdp2-1.fna&oh=00_AYBnXtnzhM-fnrRwyll9ZdO8pddg88MCRnV0GxeeIG7AZg&oe=66C24A5C"
+              // linkedin="https://www.linkedin.com/in/johndoe"
+              Instagram="https://www.instagram.com/_diya_bhattarai_/"
+              github="#"
+              email="#"
+            />
+            <PersonCard
+              name="Alish Gautam"
+              role="Developer: Bug Tester"
+              imageUrl="https://scontent.fbdp2-1.fna.fbcdn.net/v/t39.30808-1/431194581_1133917127803595_9059297124589359905_n.jpg?stp=dst-jpg_p200x200&_nc_cat=110&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeEPaleCy_nbjfqQxuPzMCmKFIfefya2wSAUh95_JrbBID1h6LtRCXhPiZI2VlnMmzF0nGcVVVBDd0HjoCx6CQ-t&_nc_ohc=KNmDz10e564Q7kNvgFib0J9&_nc_ht=scontent.fbdp2-1.fna&oh=00_AYAp2TQNNSYm2xmgTqYl0gI-8TGQAEonTppS46EdX7TNtw&oe=66C22DF8"
+              // linkedin="https://www.linkedin.com/in/johndoe"
+              Instagram="https://www.instagram.com/alish_gautam11/"
+              github="https://www.github.com/AZalish"
+              email="alishgautam27@gmail.com"
             />
             <PersonCard
               name="Pratik Timsina"
@@ -240,6 +258,15 @@ const MyPage = () => {
               // linkedin="https://www.linkedin.com/in/johndoe"
               Instagram="https://twitter.com/johndoe"
               github="https://github.com/johndoe"
+              email="john@example.com"
+            />
+            <PersonCard
+              name="Smarika Nepal"
+              role="Contributer: Nepali/Wmad/Os"
+              imageUrl="https://scontent.fbdp2-1.fna.fbcdn.net/v/t1.30497-1/453178253_471506465671661_2781666950760530985_n.png?stp=dst-png_p200x200&_nc_cat=1&ccb=1-7&_nc_sid=136b72&_nc_eui2=AeHcTQRt_r3Ns7AGMEm81rW7Wt9TLzuBU1Ba31MvO4FTUPflWM9uRDJlTBNL_SNWWX9X67rNSSTLmbE5HkCJnY9H&_nc_ohc=kWxeXr9no-YQ7kNvgGgZpzB&_nc_ht=scontent.fbdp2-1.fna&oh=00_AYA0zxvy75dwp0DW1bOjvyqF38_1Qdjam6-7qonhMdz_PQ&oe=66E3FDBA"
+              // linkedin="https://www.linkedin.com/in/johndoe"
+              Instagram="#"
+              github="#"
               email="john@example.com"
             />
           </div>

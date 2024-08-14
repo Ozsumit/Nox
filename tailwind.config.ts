@@ -14,11 +14,13 @@ const config: Config = {
      'bgblack':'#0F0F0F',
      'accent':'#c9b4b3',
      'accenth':'#c9b4c7',
+     'blackBl':'#0000025',
       },
       spacing: {
         '128': '32rem',
         '144': '36rem',
-        'exl':'100vh'
+        'exl':'100vh',
+        'exxl':'350vh',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

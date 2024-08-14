@@ -2,7 +2,7 @@ import React from "react";
 
 const DeveloperNote: React.FC = () => {
   return (
-    <div className=" sm:w-11/12 bg-black border border-white dark:border-white/[0.2] text-gray-400 p-4 rounded-lg">
+    <div className=" sm:w-11/12 backdrop:blur-md z-50 bg-Bl border border-white dark:border-white/[0.2] text-gray-400 p-4 rounded-lg">
       <p className="font-bold text-white text-lg mb-2">
         Developer&apos;s Note:
       </p>
