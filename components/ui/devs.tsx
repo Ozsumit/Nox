@@ -36,6 +36,11 @@ const PersonCard: React.FC<PersonCardProps> = ({
           layout="fill"
           objectFit="cover"
           className="rounded-t-lg"
+          onError={(e) => {
+            console.error(`Error loading image for ${name}:`, e);
+            // Optionally set a fallback image
+            // e.target.src = '/path/to/fallback-image.jpg';
+          }}
         />
       </div>
       <div className="p-6">
