@@ -66,8 +66,7 @@ const MyPage = () => {
         <div className="hero flex justify-center  flex-col lg:pt-16 sm:pt-0 w-auto sm:border-t-0 sm:border-t-white">
           {/* <ContactUs />? */}
           <ContactUs />
-           
-       
+
           <ShootingStars />
           <StarsBackground />
         </div>
