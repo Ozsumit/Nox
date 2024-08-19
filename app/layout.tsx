@@ -8,7 +8,7 @@ import logo from "../components/image/logo.svg";
 import { Toaster } from "sonner";
 export const metadata: Metadata = {
   title: "Nox",
-  description: "Need help with your homework?? I gotchu!",
+  description: "Need help with your homework?? I gotchu",
   // <link rel="icon" href="/favicon.ico" sizes="any" />
 };
 
