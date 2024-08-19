@@ -219,10 +219,10 @@ const MyPage = () => {
               name="Sumit Pokhrel"
               role="Developer"
               imageUrl="./images/sumit2.jpg"
-              linkedin="https://www.linkedin.com/in/johndoe"
-              Instagram="https://twitter.com/johndoe"
-              github="https://github.com/johndoe"
-              email="john@example.com"
+              linkedin="https://www.linkedin.com/in/sumit-pokhrel-/"
+              Instagram="https://www.instagram.com/sumitp0khrel/"
+              github="https://github.com/ozsumit"
+              email="pokhrelsumit36@gmail.com"
             />
             <PersonCard
               name="Denisha Adhikari"
