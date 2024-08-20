@@ -30,6 +30,11 @@ const MyPage = () => {
       description: "*Unavailable!!*",
       link: "##",
     },
+    {
+      title: "Question Papers",
+      description: "*Available!!*",
+      link: "/questionset",
+    },
   ];
 
   return (

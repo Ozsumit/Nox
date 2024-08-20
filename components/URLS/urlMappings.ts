@@ -70,4 +70,11 @@ export const urlMappings: { [key: string]: string } = {
     "https://drive.google.com/file/d/11D24ILwYI_UGrwG0JNpANclZf9UnvArC/preview",
   "Website Design Principles":
     "https://drive.google.com/file/d/1mkPVjfPLOTNYyak26qbXJrOO6fL2lMyw/preview",
+  // ===========Questions=============================
+  "Chem-9111/ Year-2081(2024)":
+    "https://drive.google.com/file/d/1d6jo4jq1-kHz9dG_bZ4P2DX02YwXglqN/preview",
+  "Math-0081'H'/ Year-2080(2023)":
+    "https://drive.google.com/file/d/1O5zD3nyU_pdoPdCxkG7O08RttnN4hPUW/preview",
+  "Physics-1021'Q'/ Year-2080(2023)":
+    "https://drive.google.com/file/d/1RsMyg28iBhnHvhHexWPKkXJOBNNMQTU5/preview",
 };
