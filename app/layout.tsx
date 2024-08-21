@@ -5,11 +5,10 @@ import Link from "next/link";
 import Image from "next/image";
 const inter = Inter({ subsets: ["latin"] });
 import logo from "../components/image/logo.svg";
+import { Manifest } from "next/dist/lib/metadata/types/manifest-types";
 import { Toaster } from "sonner";
 export const metadata: Metadata = {
   title: "Nox",
-  description: "Need help with your homework?? I gotchu",
-  // <link rel="icon" href="/favicon.ico" sizes="any" />
 };
 
 export default function RootLayout({
