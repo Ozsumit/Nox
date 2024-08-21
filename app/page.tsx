@@ -33,7 +33,7 @@ const MyPage = () => {
     {
       title: "Question Papers",
       description: "*Available!!*",
-      link: "/questionset",
+      link: "/Questions",
     },
   ];
 
