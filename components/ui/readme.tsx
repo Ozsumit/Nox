@@ -32,6 +32,13 @@ This is the first time i've worked with React framework. Must say, it was a roug
 # File must be readable under all conditions. Good Handwriting and clear picture quality are appreciated
 File can be shared to the developer by contacting through E-mail, Instagram, Whatsapp or Messenger.(File Upload Button Coming Soon) 
 
+Naming Conventions:-
+Lighthouse: Alpha build
+Aurora: Alpha.1
+Nox: Beta Build [We are here]
+Twilight: Test Build
+Daybreak: Feature updates
+Dawn: Final Build
 `}
       </pre>
     </div>
