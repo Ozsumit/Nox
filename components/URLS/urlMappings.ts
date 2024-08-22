@@ -65,6 +65,14 @@ export const urlMappings: { [key: string]: string } = {
     "https://drive.google.com/file/d/1NRlX_4upUlUKX1vnDtG8TCF4bqOl13Vc/preview",
   "Memory Management and Paging":
     "https://drive.google.com/file/d/1LMVDAsCia6_HSpFhEWSdhrp7ZNfZJiDe/preview",
+  // =====================class 11 physics============================
+
+  "Chapter 1: Kinematics":
+    "https://drive.google.com/file/d/15Vj7YRnP378-DB11rU_TJ3eHoGTbpSpT/preview",
+  // =====================class 11 physics============================
+  "Electric Circuit":
+    "https://drive.google.com/file/d/1eh3TJ3PGCLgd_UBd0GRCHAdbOk-HjHM5/preview",
+  // =====================class 11 physics============================
   // --------------------------class9 Web
   "Basic in Website Design":
     "https://drive.google.com/file/d/11D24ILwYI_UGrwG0JNpANclZf9UnvArC/preview",

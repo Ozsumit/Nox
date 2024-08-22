@@ -89,8 +89,8 @@ const MyPage = () => {
   ];
   const pagination = [
     { label: "Home", href: "/" },
-    { label: "Class 11", href: "/class11/" },
-    { label: "WMAD", href: "/app/pages/class11/WMAD" },
+    { label: "Class 12", href: "/class12/" },
+    { label: "Physics", href: "/app/pages/class12/Physics" },
   ];
 
   return (
