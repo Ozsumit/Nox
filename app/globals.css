@@ -8,11 +8,11 @@
   --text-color: #000;
   /* Add more variables as needed */
 }
-.clipbg{
+.clipbg {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  }
+}
 
 [data-theme="dark"] {
   --primary-color: #fff;
@@ -34,6 +34,7 @@ body {
   animation: fadefromblack 1s ease-in-out 1 forwards;
   -webkit-animation: fadefromblack 1s ease-in-out 1 forwards;
 }
+
 .nav2 {
   margin-bottom: 0rem;
   border: 1px solid white;

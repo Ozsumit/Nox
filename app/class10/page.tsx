@@ -47,8 +47,8 @@ const MyPage = () => {
   const subs = [
     {
       title: "Nepali",
-      description: "*Unvailable!!*",
-      link: "#",
+      description: "*Available!!*",
+      link: "/pages/class10/Nepali",
     },
     {
       title: "DBMS",

@@ -40,29 +40,29 @@ const MyPage = () => {
     {
       title: "Class 12",
       description: "Unavailable!!",
-      link: "##",
+      link: "../pages/class12/Physics",
     },
   ];
 
   const subs = [
     {
-      title: "Java",
+      title: "Physics",
       description: "Available",
-      link: "/pages/class11/Javaa",
+      link: "/pages/class12/Physics",
     },
     {
-      title: "WMAD",
-      description: "Available",
-      link: "/pages/class11/WMAD",
+      title: "###",
+      description: "Unavailable",
+      link: "##",
     },
     {
-      title: "Operating System",
-      description: "Available",
-      link: "/pages/class11/OS",
+      title: "###",
+      description: "Unavailable",
+      link: "##",
     },
     {
-      title: "Math",
-      description: "Unavailable!!",
+      title: "###",
+      description: "Unavailable",
       link: "##",
     },
   ];
@@ -111,7 +111,7 @@ const MyPage = () => {
   ];
   const pagination = [
     { label: "Home", href: "/" },
-    { label: "Class 11", href: "/class11/" },
+    { label: "Class 12", href: "/class12/" },
     // { label: "DBMS", href: "/app/pages/class10/DBMS" },
   ];
 

@@ -77,4 +77,7 @@ export const urlMappings: { [key: string]: string } = {
     "https://drive.google.com/file/d/1O5zD3nyU_pdoPdCxkG7O08RttnN4hPUW/preview",
   "Physics-1021'Q'/ Year-2080(2023)":
     "https://drive.google.com/file/d/1RsMyg28iBhnHvhHexWPKkXJOBNNMQTU5/preview",
+  // =============================Physics Class 12=================
+  "Chapter 1: Electrons and protons":
+    "https://drive.google.com/file/d/1WZjH-5uFqCl46GQSPWDBhq_h3hhBJ4uV/preview",
 };

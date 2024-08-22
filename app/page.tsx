@@ -27,8 +27,8 @@ const MyPage = () => {
     },
     {
       title: "Class 12",
-      description: "*Unavailable!!*",
-      link: "##",
+      description: "Available",
+      link: "/class12",
     },
     {
       title: "Question Papers",
