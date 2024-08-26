@@ -38,6 +38,7 @@ Aurora: Alpha.1
 Nox: Beta Build [We are here]
 Twilight: Test Build
 Daybreak: Feature updates
+Odessey: Test & Feature additions
 Dawn: Final Build
 `}
       </pre>
