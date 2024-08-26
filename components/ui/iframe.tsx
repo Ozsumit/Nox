@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { urlMappings } from "../URLS/urlMappings";
 import { FaExpand } from "react-icons/fa";
+import { FaArrowUp } from "react-icons/fa";
 
 interface IframeProps {
   identifier: string;
@@ -9,6 +10,7 @@ interface IframeProps {
 const Iframe: React.FC<IframeProps> = ({ identifier }) => {
   const iframeRef = useRef<HTMLIFrameElement | null>(null);
   const [iframeLoaded, setIframeLoaded] = useState(false);
+  const [showBackToTop, setShowBackToTop] = useState(false);
 
   const requestFullScreen = () => {
     const iframe = iframeRef.current;
@@ -36,6 +38,21 @@ const Iframe: React.FC<IframeProps> = ({ identifier }) => {
     setIframeLoaded(true);
   };
 
+  const handleScroll = () => {
+    if (window.scrollY > 300) {
+      setShowBackToTop(true);
+    } else {
+      setShowBackToTop(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   useEffect(() => {
     const iframe = iframeRef.current;
     if (iframe) {
@@ -44,6 +61,11 @@ const Iframe: React.FC<IframeProps> = ({ identifier }) => {
         iframe.removeEventListener("load", handleIframeLoad);
       };
     }
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   const source = urlMappings[identifier]?.url || "";
@@ -60,13 +82,22 @@ const Iframe: React.FC<IframeProps> = ({ identifier }) => {
         title={identifier}
       ></iframe>
       {iframeLoaded && (
-        <button
-          title="Fullscreen"
-          onClick={requestFullScreen}
-          className="absolute top-4 w-14 h-14 flex justify-center items-center right-2 px-4 py-2 bg-slate-950 text-white rounded"
-        >
-          <FaExpand />
-        </button>
+        <div>
+          <button
+            title="Fullscreen"
+            onClick={requestFullScreen}
+            className="absolute top-4 w-14 h-14 flex justify-center items-center right-2 px-4 py-2 bg-slate-950 text-white rounded"
+          >
+            <FaExpand />
+          </button>
+          <button
+            title="Back to Top"
+            onClick={scrollToTop}
+            className="  fixed bottom-55 right-4 w-12 h-12 flex justify-center items-center bg-slate-950 border border-white text-white rounded-full shadow-lg"
+          >
+            <FaArrowUp />
+          </button>
+        </div>
       )}
     </div>
   );
