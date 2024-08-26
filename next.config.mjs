@@ -1,8 +1,19 @@
-// /** @type {import('next').NextConfig} */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  //  basePath: "//Nox",
+  // basePath: "//Nox",
   output: "export",
   reactStrictMode: true,
   images: { unoptimized: true },
 };
-export default nextConfig;
+
+// Create the configuration with Webpack customization
+const config = {
+  ...nextConfig,
+  webpack: (config) => {
+    // Disable canvas in Webpack configuration
+    config.resolve.alias.canvas = false;
+    return config;
+  },
+};
+
+export default config;

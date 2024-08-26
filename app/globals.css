@@ -162,7 +162,7 @@ body {
     text-decoration: none;
     color: var(--text);
     font-family: "Gemunu Libre", sans-serif;
-    width: 78px;
+    /* width: 100px; */
     font-size: 1.3rem;
     color: #d6d6d6;
   }

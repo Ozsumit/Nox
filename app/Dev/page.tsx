@@ -261,15 +261,21 @@ const MyPage = () => {
               github="https://github.com/johndoe"
               email="john@example.com"
             />
-            <PersonCard
-              name="Smarika Nepal"
-              role="Contributer: Nepali/Wmad/Os"
-              imageUrl="./images/female.png"
-              // linkedin="https://www.linkedin.com/in/johndoe"
-              Instagram="#"
-              github="#"
-              email="john@example.com"
-            />
+          </div>
+          <div className=" sm:w-11/12 backdrop:blur-md mb-4 z-50 bg-Bl border border-white dark:border-white/[0.2] text-gray-400 p-4 rounded-lg">
+            <p className="font-bold text-white text-lg mb-2">
+              Special Thanks To Our Copy Providers
+            </p>
+            <pre className="font-mono text-pretty text-md whitespace-pre-wrap">
+              {`
+  Name: Smarika Nepal,
+  Provided us With: All notes of Class 10 Nepali
+  ----------------------------------------------
+  Name: Anushka  Gautam,
+  Provided us With: All notes of Class 9 Website Designing
+  ----------------------------------------------
+`}
+            </pre>
           </div>
           <DeveloperNote />
 
