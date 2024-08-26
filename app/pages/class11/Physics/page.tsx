@@ -67,14 +67,19 @@ const MyPage = () => {
       link: "#pdf",
     },
     {
-      title: "Unit 3",
-      description: "Unavailable",
-      link: "#",
+      title: "Light",
+      description: "Dispersion of light",
+      link: "#pdf",
     },
     {
-      title: "Unit 4 ",
-      description: "Unavailable",
-      link: "#",
+      title: "Light",
+      description: "Dispersion of light at Plane surface",
+      link: "#pdf",
+    },
+    {
+      title: "Dimensions ",
+      description: "Units & Dimensions",
+      link: "#pdf",
     },
     {
       title: "Unit 5",

@@ -62,9 +62,9 @@ const MyPage = () => {
       link: "#pdf",
     },
     {
-      title: "Unit 2",
-      description: "Unavailable",
-      link: "#",
+      title: "Motion",
+      description: "Circular Motion",
+      link: "#pdf",
     },
     {
       title: "Unit 3",

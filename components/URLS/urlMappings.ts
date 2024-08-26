@@ -154,6 +154,22 @@ export const urlMappings: {
     Grade: "11",
     subject: "Physics",
   },
+  "Dispersion of light": {
+    url: "https://drive.google.com/file/d/1zgq3QTGUU35Zxw7UpVH9bNQBFuWUKBdi/preview",
+    Grade: "11",
+    subject: "Physics",
+  },
+  "Dispersion of light at Plane surface": {
+    url: "https://drive.google.com/file/d/1ocwc6VHS_BXFbuC0I0A_CM2DCWJVXWr_/preview",
+    Grade: "11",
+    subject: "Physics",
+  },
+  "Units & Dimensions": {
+    url: "https://drive.google.com/file/d/11Csyx_GnO9KNntdaLVTcoYCORnMTOI02/preview",
+    Grade: "11",
+    subject: "Physics",
+  },
+
   // --------------------------Grade9 Web
   "Basic in Website Design": {
     url: "https://drive.google.com/file/d/11D24ILwYI_UGrwG0JNpANclZf9UnvArC/preview",
@@ -184,6 +200,11 @@ export const urlMappings: {
   // =============================Physics Grade 12=================
   "Chapter 1: Electrons and protons": {
     url: "https://drive.google.com/file/d/1WZjH-5uFqCl46GQSPWDBhq_h3hhBJ4uV/preview",
+    Grade: "12",
+    subject: "Physics",
+  },
+  "Circular Motion": {
+    url: "https://drive.google.com/file/d/1uwD1NB_p1Vzsst5CmLCwcjqhvZl5X2jd/preview",
     Grade: "12",
     subject: "Physics",
   },
