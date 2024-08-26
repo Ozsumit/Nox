@@ -10,7 +10,7 @@ import SearchEngine from "@/components/ui/searchEngine";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Nox",
+  title: "Twilight",
   description: " Still working on it🥲🥲",
 };
 
