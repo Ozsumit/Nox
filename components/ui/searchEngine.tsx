@@ -68,7 +68,7 @@ const SearchEngine: React.FC = () => {
           value={searchTerm}
           onChange={handleSearchChange}
           placeholder="Quickly find the file you are looking for"
-          className="z-50 w-128 h-12 text-white rounded-md border border-white dark:border-white/[0.2] border-input bg-black px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+          className="md:w-full lg:w-144 h-12 text-white bg-black rounded-md border border-white/20 px-4 py-2 text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-neutral-50 focus:border-transparent transition duration-200 ease-in-out"
         />
         <div className="mt-4">
           {searchResults.map((result, index) => (

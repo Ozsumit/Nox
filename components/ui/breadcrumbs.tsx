@@ -32,7 +32,7 @@ const Breadcrumb = React.forwardRef<HTMLDivElement, BreadcrumbProps>(
               <Link
                 href={item.href}
                 className={cn(
-                  "text-xl font-medium text-white hover:text-gray-700"
+                  "text-xl sm:text-lg font-medium text-white hover:text-gray-700"
                 )}
               >
                 {item.label}

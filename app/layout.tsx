@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className="fadefromblack opacity-0 h-screen rounded-md bg-black flex flex-col w-auto px-4 pt-2 scroll-smooth">
         <div>
-          <div className="navigation flex justify-between items-center text-2xl">
+          <div className="navigation flex justify-between items-center text-2xl flex-col lg:flex-row">
             <Link href="/" className="logoxdc w-auto h-auto z-50">
               <Image
                 priority
@@ -49,7 +49,7 @@ export default function RootLayout({
               </Link>
             </div>
 
-            <div className="nav2 md:hidden lg:hidden flex-row flex justify-center border-l border-white dark:border-white/[0.2] items-center py-3 group-hover:border-slate-70">
+            <div className="nav2 md:hidden lg:hidden flex-row mb-10 flex justify-center border-l border-white dark:border-white/[0.2] items-center py-3 group-hover:border-slate-70">
               <Link href="/" className="font-mono">
                 Home
               </Link>

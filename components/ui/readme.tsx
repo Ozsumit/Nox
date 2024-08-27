@@ -35,8 +35,8 @@ File can be shared to the developer by contacting through E-mail, Instagram, Wha
 Naming Conventions:-
 Lighthouse: Alpha build
 Aurora: Alpha.1
-Nox: Beta Build [We are here]
-Twilight: Test Build
+Nox: Beta Build 
+Twilight: Test Build [We are here]
 Daybreak: Feature updates
 Odessey: Test & Feature additions
 Dawn: Final Build
