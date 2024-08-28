@@ -113,8 +113,8 @@ const MyPage = () => {
                   key={index}
                   height={150}
                   className="mb-4 rounded-7xl"
-                  baseColor="#090909"
-                  highlightColor="#444"
+                  baseColor="#000000"
+                  highlightColor="#383838"
                 />
               ))}
             </div>
@@ -132,9 +132,9 @@ const MyPage = () => {
             {isLoading ? (
               <Skeleton
                 height={400}
-                width="100%"
-                baseColor="#090909"
-                highlightColor="#444"
+                className="mb-4 rounded-7xl"
+                baseColor="#000000"
+                highlightColor="#383838"
               />
             ) : (
               <Iframe identifier={currentIdentifier} />

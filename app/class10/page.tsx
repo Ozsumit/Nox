@@ -135,9 +135,9 @@ const MyPage = () => {
                 <Skeleton
                   key={index}
                   height={150}
-                  className="mb-4 rounded-7xl "
-                  baseColor="#090909"
-                  highlightColor="#444"
+                  className="mb-4 rounded-7xl"
+                  baseColor="#000000"
+                  highlightColor="#383838"
                 />
               ))}
             </div>

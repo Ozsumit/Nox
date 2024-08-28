@@ -61,14 +61,14 @@ const SearchEngine: React.FC = () => {
   };
 
   return (
-    <div className="max-w-4xl z-50 mx-auto p-4 flex flex-col justify-center items-center">
-      <div className="mb-4">
+    <div className="z-50 mx-auto w-screen lg:w-auto p-4 flex flex-col justify-center items-center">
+      <div className="mb-4 w-10/12 lg:w-auto">
         <input
           type="text"
           value={searchTerm}
           onChange={handleSearchChange}
           placeholder="Quickly find the file you are looking for"
-          className="md:w-full lg:w-144 h-12 text-white bg-black rounded-md border border-white/20 px-4 py-2 text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-neutral-50 focus:border-transparent transition duration-200 ease-in-out"
+          className=" w-full lg:w-144 h-12 text-white bg-black rounded-md border border-white/20 px-4 py-2 text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-neutral-50 focus:border-transparent transition duration-200 ease-in-out"
         />
         <div className="mt-4">
           {searchResults.map((result, index) => (

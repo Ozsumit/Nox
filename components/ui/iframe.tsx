@@ -93,7 +93,7 @@ const Iframe: React.FC<IframeProps> = ({ identifier }) => {
           <button
             title="Back to Top"
             onClick={scrollToTop}
-            className="  fixed bottom-55 right-4 w-12 h-12 flex justify-center items-center bg-slate-950 border border-white text-white rounded-full shadow-lg"
+            className="  fixed right-4 w-12 h-12 flex justify-center items-center bg-transparent border border-white text-white rounded-full shadow-lg"
           >
             <FaArrowUp />
           </button>
