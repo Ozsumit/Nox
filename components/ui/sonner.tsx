@@ -1,45 +1,44 @@
 "use client";
 
-// import { useTheme } from "next-themes";
-import { Toaster as Sonner } from "sonner";
+import React from "react";
+import { Toaster as Sonner, toast } from "sonner";
+import Link from "next/link";
 
 type ToasterProps = React.ComponentProps<typeof Sonner>;
 
 const Toaster = ({ ...props }: ToasterProps) => {
-  // const { theme = "dark-theme" } = useTheme();
-
-  // Customize toast options without explicitly typing as ToastOptions
   const toastOptions = {
-    duration: 5000, // Duration in milliseconds
-    position: "top-right", // Position of the toast
-    classNames: {
-      toast:
-        "group toast group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg transition-all duration-300 ease-in-out transform",
-      description: "group-[.toast]:text-muted-foreground text-sm",
-      actionButton:
-        "group-[.toast]:bg-primary group-[.toast]:text-primary-foreground font-bold",
-      cancelButton:
-        "group-[.toast]:bg-muted group-[.toast]:text-muted-foreground",
-    },
+    duration: 5000,
+    position: "top-right" as const,
+    closeButton: true,
     style: {
-      borderRadius: "1px", // Rounded corners for the toast
-      padding: "16px", // Padding inside the toast
-      background: "black", // Background color
-      color: "white", // Text color
+      background: "black",
+      color: "white",
+      borderRadius: "4px",
+      padding: "16px",
     },
+    className: "custom-toast",
   };
 
-  // Additional customization based on theme
-  // const customTheme = theme === "dark" ? "dark-theme" : "light-theme";
-
   return (
-    <Sonner
-      // theme={theme as ToasterProps["theme"]}
-      className={`toaster group `}
-      toastOptions={toastOptions}
-      {...props}
-    />
+    <Sonner className="toaster group" toastOptions={toastOptions} {...props} />
   );
 };
 
-export { Toaster };
+// Custom function to show toast with link
+// export const showToastWithLink = (
+//   message: string,
+//   linkText: string,
+//   linkHref: string
+// ) => {
+//   toast(
+//     <div>
+//       {message}{" "}
+//       <Link href={linkHref} className="text-blue-500 hover:underlin">
+//         {linkText}
+//       </Link>
+//     </div>
+//   );
+// };
+
+export { Toaster, toast };

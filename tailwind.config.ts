@@ -7,20 +7,19 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    
     extend: {
       colors: {
-     'grays':'#1F2020',
-     'bgblack':'#0F0F0F',
-     'accent':'#c9b4b3',
-     'accenth':'#c9b4c7',
-     'blackBl':'#0000025',
+        grays: "#1F2020",
+        bgblack: "#0F0F0F",
+        accent: "#c9b4b3",
+        accenth: "#c9b4c7",
+        blackBl: "#0000025",
       },
       spacing: {
-        '128': '32rem',
-        '144': '36rem',
-        'exl':'100vh',
-        'exxl':'350vh',
+        "128": "32rem",
+        "144": "36rem",
+        exl: "100vh",
+        exxl: "350vh",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
