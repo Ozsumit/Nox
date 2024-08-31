@@ -208,4 +208,24 @@ export const urlMappings: {
     Grade: "12",
     subject: "Physics",
   },
+  "Magnetic Properties of Materials": {
+    url: "https://drive.google.com/file/d/1YGeXdwTOqgjaHkUn5lULfzY2R3L5_lN6/preview",
+    Grade: "12",
+    subject: "Physics",
+  },
+  "2nd Law of Thermodynamics": {
+    url: "https://drive.google.com/file/d/1uwD1NB_p1Vzsst5CmLCwcjqhvZl5X2jd/preview",
+    Grade: "12",
+    subject: "Physics",
+  },
+  "Rotational Dynamics": {
+    url: "https://drive.google.com/file/d/1EbDu-X21m2qTrr_afelmL2IjnykGrYMu/preview",
+    Grade: "12",
+    subject: "Physics",
+  },
+  "Alternating Current": {
+    url: "https://drive.google.com/file/d/1GoOS5D6HI5cCMzEKnkWmcACsGnDpnlmT/preview",
+    Grade: "12",
+    subject: "Physics",
+  },
 };

@@ -67,24 +67,24 @@ const MyPage = () => {
       link: "#pdf",
     },
     {
-      title: "Unit 3",
-      description: "Unavailable",
-      link: "#",
+      title: "Electricity & Magnetism",
+      description: "Magnetic Properties of Materials",
+      link: "#pdf",
     },
     {
-      title: "Unit 4 ",
-      description: "Unavailable",
-      link: "#",
+      title: "Electricity & Magnetism ",
+      description: "Alternating Current",
+      link: "#pdf",
     },
     {
-      title: "Unit 5",
-      description: "Unavailable",
-      link: "#",
+      title: "Heat & Thermodynamics",
+      description: "2nd Law of Thermodynamics",
+      link: "#pdf",
     },
     {
-      title: "Unit 6",
-      description: "Unavailable",
-      link: "#",
+      title: "Mechanics",
+      description: "Rotational Dynamics",
+      link: "#pdf",
     },
   ];
   const pagination = [
