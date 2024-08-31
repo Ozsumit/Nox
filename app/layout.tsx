@@ -50,6 +50,11 @@ export default function RootLayout({
               <Link href="/QuickFind" className="font-mono">
                 QFind
               </Link>
+              <Link href="/donate" className="font-mono">
+                <button className="px-2 py-1  duration-500 bg-orange-500 text-white rounded hover:bg-blue-600 transition-colors  z-10">
+                  Donate
+                </button>
+              </Link>
             </div>
 
             <div className="nav2 md:hidden lg:hidden flex-row mb-10 flex justify-center border-l border-white dark:border-white/[0.2] items-center py-3 group-hover:border-slate-70">
@@ -65,6 +70,11 @@ export default function RootLayout({
               <Link href="/QuickFind" className="font-mono">
                 QFind
               </Link>
+              <Link href="/donate" className="font-mono">
+                <button className="px-2 py-1  duration-500 bg-orange-500 text-white rounded hover:bg-blue-600 transition-colors  z-10">
+                  Donate
+                </button>
+              </Link>
             </div>
             {/* <SearchEngine /> */}
             <div></div>
@@ -75,13 +85,7 @@ export default function RootLayout({
 
           <Toaster />
         </div>
-        <div className="flex flex-col justify-center items-center w-[95vw]">
-          <Link href="/donate" className="font-mono">
-            <button className="mt-4 px-4 py-2  duration-500 bg-orange-500 text-white rounded hover:bg-blue-600 transition-colors  z-10">
-              Donate
-            </button>
-          </Link>
-        </div>
+        <div className="flex flex-col justify-center items-center w-[95vw]"></div>
       </body>
     </html>
   );
