@@ -1,24 +1,29 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useCallback } from "react";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { toast, Toaster } from "sonner";
 import Link from "next/link";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
+import { X } from "lucide-react";
 
 const MyPage = () => {
-  useEffect(() => {
+  const showToast = useCallback(() => {
     toast(
-      <div>
-        The admin needs help!!! quick{" "}
-        <Link
-          href="/donate"
-          className="text-blue-500 hover:text-orange-500
-        "
+      <div className="flex items-center justify-between">
+        <div>
+          The admin needs help!!! quick{" "}
+          <Link href="/donate" className="text-blue-500 hover:text-orange-500">
+            Click here to help
+          </Link>
+        </div>
+        <button
+          onClick={() => toast.dismiss()}
+          className="ml-2 text-gray-500 hover:text-gray-700"
         >
-          Click here to help
-        </Link>
+          <X size={18} />
+        </button>
       </div>,
       {
         duration: 10000,
@@ -26,7 +31,7 @@ const MyPage = () => {
       }
     );
   }, []);
-
+  showToast();
   const items = [
     {
       title: "Class 9",

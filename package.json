@@ -1,7 +1,7 @@
 {
   "name": "lighthouse",
-  "version": "0.1.0",
-  "private": true,
+  "version": "3.1",
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
