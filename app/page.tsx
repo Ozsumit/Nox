@@ -10,26 +10,42 @@ import { X } from "lucide-react";
 
 const MyPage = () => {
   const showToast = useCallback(() => {
-    toast(
-      <div className="flex items-center justify-between">
-        <div>
-          The admin needs help!!! quick{" "}
-          <Link href="/donate" className="text-blue-500 hover:text-orange-500">
-            Click here to help
-          </Link>
-        </div>
-        <button
-          onClick={() => toast.dismiss()}
-          className="ml-2 text-gray-500 hover:text-gray-700"
-        >
-          <X size={18} />
-        </button>
-      </div>,
-      {
-        duration: 10000,
-        position: "top-right",
-      }
-    );
+    setTimeout(() => {
+      toast(
+        <div className="flex items-center justify-between w-full">
+          <span>
+            The admin needs help!!! quick{" "}
+            <a
+              href="/help" // Replace with your actual help page URL
+              className="text-green-400 hover:text-green-200 "
+              onClick={(e) => {
+                e.preventDefault();
+                toast.dismiss();
+                // Add your navigation logic here, e.g.:
+                // router.push('/help');
+              }}
+            >
+              Click here to help
+            </a>
+          </span>
+          <button
+            onClick={() => toast.dismiss()}
+            className="ml-2  hover:text-gray-700"
+          >
+            <X size={18} />
+          </button>
+        </div>,
+        {
+          duration: 10000,
+          position: "top-right",
+          style: {
+            background: "#850F0F",
+            color: "#fff",
+            border: "none",
+          },
+        }
+      );
+    }, 3000);
   }, []);
 
   useEffect(() => {
@@ -107,7 +123,7 @@ const MyPage = () => {
           />
         </div>
       </div>
-      <Toaster />
+      <Toaster richColors />
     </main>
   );
 };

@@ -114,7 +114,7 @@ const DonatePage = () => {
             />
             <button
               onClick={() => setShowQR(false)}
-              className="mt-4 bg-gray-300 hover:bg-gray-400 text-black font-bold py-2 px-4 rounded"
+              className="mt-4 bg-[#850F0F] hover:bg-gray-400  hover:text-[#000] transition-all  duration-300 ease-linear text-[#fff] font-bold py-2 px-4 rounded"
             >
               Close
             </button>

@@ -24,7 +24,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    
     <html lang="en" className="scroll-smooth">
       <body className="fadefromblack opacity-0 h-screen rounded-md bg-black flex flex-col w-auto px-4 pt-2 scroll-smooth">
         <div>
@@ -53,7 +52,7 @@ export default function RootLayout({
                 QFind
               </Link>
               <Link href="/donate" className="font-mono">
-                <button className="px-2 py-1  duration-500 bg-orange-500 text-white rounded hover:bg-blue-600 transition-colors  z-10">
+                <button className="px-3 py-1  duration-500 bg-orange-500 text-white rounded-[.8rem] hover:bg-blue-600 transition-colors  z-10">
                   Donate
                 </button>
               </Link>
