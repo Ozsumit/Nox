@@ -7,7 +7,8 @@ import Image from "next/image";
 import logo from "../components/image/logo.svg";
 import SearchEngine from "@/components/ui/searchEngine";
 // import { Button } from "@/components/ui/button";
-import React, { useCallback } from "react";
+import React, { useCallback, useEffect } from "react";
+
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { toast, Toaster } from "sonner";
 import Link from "next/link";
@@ -23,6 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    
     <html lang="en" className="scroll-smooth">
       <body className="fadefromblack opacity-0 h-screen rounded-md bg-black flex flex-col w-auto px-4 pt-2 scroll-smooth">
         <div>

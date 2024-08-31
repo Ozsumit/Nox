@@ -1,14 +1,45 @@
 "use client";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 import Iframe from "@/components/ui/iframe";
 import Link from "next/link";
+import { X } from "lucide-react";
+
+import { toast, Toaster } from "sonner";
+
 import { Breadcrumb } from "@/components/ui/breadcrumbs";
 const MyPage = () => {
+  const showToast = useCallback(() => {
+    toast(
+      <div className="flex items-center justify-between">
+        <div>
+          The admin needs help!!! quick{" "}
+          <Link href="/donate" className="text-blue-500 hover:text-orange-500">
+            Click here to help
+          </Link>
+        </div>
+        <button
+          onClick={() => toast.dismiss()}
+          className="ml-2 text-gray-500 hover:text-gray-700"
+        >
+          <X size={18} />
+        </button>
+      </div>,
+      {
+        duration: 10000,
+        position: "top-right",
+      }
+    );
+  }, []);
+
+  useEffect(() => {
+    showToast();
+  }, [showToast]);
+
   const [visibleLessons, setVisibleLessons] = useState<string | null>(null);
   const [currentIdentifier, setCurrentIdentifier] = useState<string>("default");
   const [isLoading, setIsLoading] = useState(true);
@@ -56,7 +87,6 @@ const MyPage = () => {
   ];
 
   const lessons = [
-  
     {
       title: "Electricity & Magnetism",
       description: "Magnetic Properties of Materials",
