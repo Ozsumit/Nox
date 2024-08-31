@@ -17,33 +17,33 @@ I bid my respect and thanks to the contributors who provided me with their notes
 
 Made With
 
--NextJS
--Aceternity Component Library
--ShadCn Component Library
--Claude by Anthropic
--Framer Motion
--FontAwesome icon library
--Lucide Icons 
--Tailwind Css
--EmailJS
+- NextJS
+- Aceternity Component Library
+- ShadCn Component Library
+- Framer Motion
+- FontAwesome icon library
+- Lucide Icons
+- Tailwind Css
+- EmailJS
 
 Developed Solely By Sumit Pokhrel
--_Dev Notes_-
+-*Dev Notes*-
 This is the first time i've worked with React framework. Must say, it was a rough start. But well, Im happy that it turned out just fine. Next target is AngularJS.
 
  How To Contribute
- File Restrictions: 
- Must be .pdf file type of less than 30mb of file size.
- File must be readable under all conditions. Good Handwriting and clear picture quality are appreciated
-File can be shared to the developer by contacting through E-mail, Instagram, Whatsapp or Messenger.(File Upload Button Coming Soon) 
+ File Restrictions:
+
+- Must be .pdf file type of less than 30mb of file size.
+- File must be readable under all conditions. Good Handwriting and clear picture quality are appreciated
+- File can be shared to the developer by contacting through E-mail, Instagram, Whatsapp or Messenger.(File Upload Button Coming Soon)
 
 Naming Conventions:-
-Lighthouse: Alpha build
-Aurora: Alpha.1
-Nox: Beta Build 
-Twilight: Test Build [We are here]
-Daybreak: Feature updates
-Odessey: Test & Feature additions
-Dawn: Final Build
+- Lighthouse: Alpha build
+- Aurora: Alpha.1
+- Nox: Beta Build
+- Twilight: Test Build [We are here]
+- Daybreak: Feature updates
+- Odessey: Test & Feature additions
+- Dawn: Final Build
 
-Visit my Webiste(https://sumit.info.np) for more details...
+Visit my Webiste https://sumit.info.np for more details...
