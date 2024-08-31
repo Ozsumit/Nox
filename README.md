@@ -1,37 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This website was developed due to the sheer frustation of me not being able to find notes for technical subjects. I plan to scale it even bigger and include all subjects of all classes and be a direct competitor of sites like NepalEnotes.
 
-## Getting Started
 
-First, run the development server:
+#Features:-
+1. Modern UI with easy navigation
+2. Free and open source
+3. No Login Required
+4. Techincal subject centric
+5. Powerful search engine
+6. Fast and responsive
+7. Special developer panel
+8. SSR
+9. Secure
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I bid my respect and thanks to the contributors who provided me with their notes.You can also become a contributer by sharing your notes with us. Details  on how to do it are given below. I assure you all, this site will not be asking for direct payment of any kind but any help is appreciated.(*Donate Button Coming Soon*)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Made With
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+-NextJS
+-Aceternity Component Library
+-ShadCn Component Library
+-Claude by Anthropic
+-Framer Motion
+-FontAwesome icon library
+-Lucide Icons 
+-Tailwind Css
+-EmailJS
 
-## Learn More
+Developed Solely By Sumit Pokhrel
+-_Dev Notes_-
+This is the first time i've worked with React framework. Must say, it was a rough start. But well, Im happy that it turned out just fine. Next target is AngularJS.
 
-To learn more about Next.js, take a look at the following resources:
+ How To Contribute
+ File Restrictions: 
+# Must be .pdf file type of less than 30mb of file size.
+# File must be readable under all conditions. Good Handwriting and clear picture quality are appreciated
+File can be shared to the developer by contacting through E-mail, Instagram, Whatsapp or Messenger.(File Upload Button Coming Soon) 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Naming Conventions:-
+Lighthouse: Alpha build
+Aurora: Alpha.1
+Nox: Beta Build 
+Twilight: Test Build [We are here]
+Daybreak: Feature updates
+Odessey: Test & Feature additions
+Dawn: Final Build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-"# Nox" 
+Visit my Webiste(https://sumit.info.np) for more details...
