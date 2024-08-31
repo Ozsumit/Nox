@@ -214,7 +214,7 @@ export const urlMappings: {
     subject: "Physics",
   },
   "2nd Law of Thermodynamics": {
-    url: "https://drive.google.com/file/d/1uwD1NB_p1Vzsst5CmLCwcjqhvZl5X2jd/preview",
+    url: "https://drive.google.com/file/d/1M3XR4Av2cJXp9qyLg8yrBD2Xw-WNaF1Q/preview",
     Grade: "12",
     subject: "Physics",
   },
@@ -225,6 +225,41 @@ export const urlMappings: {
   },
   "Alternating Current": {
     url: "https://drive.google.com/file/d/1GoOS5D6HI5cCMzEKnkWmcACsGnDpnlmT/preview",
+    Grade: "12",
+    subject: "Physics",
+  },
+  "Nature and Propagation of Light": {
+    url: "https://drive.google.com/file/d/11JcfBEQWo9Cb1OLZ74Wk1gvUQZYWfBMc/preview",
+    Grade: "12",
+    subject: "Physics",
+  },
+  "Diffraction (Proves wave nature of Light )": {
+    url: "https://drive.google.com/file/d/16pJJsTJL_61GwsHzdgviT2PMi7iozwKf/preview",
+    Grade: "12",
+    subject: "Physics",
+  },
+  "Interference of light": {
+    url: "https://drive.google.com/file/d/1ZcRK6a1oabXKH-N61bLMkE010PiRuR5O/preview",
+    Grade: "12",
+    subject: "Physics",
+  },
+ "Energy": {
+    url: "https://drive.google.com/file/d/1_HiHXAkcxR18XTPl63BBXqwMb1WfdG4i/preview",
+    Grade: "12",
+    subject: "Physics",
+  },
+  "Particle Physics & Cosmology": {
+    url: "https://drive.google.com/file/d/1GOf8JlM4J-OcPzbmKOSnUGbDGwflFd0C/preview",
+    Grade: "12",
+    subject: "Physics",
+  },
+  "Quantization ": {
+    url: "https://drive.google.com/file/d/1p453U6Nq9EOBlC1aNO5D8__4tzpGXdl1/preview",
+    Grade: "12",
+    subject: "Physics",
+  },
+  "Semiconductor Devices": {
+    url: "https://drive.google.com/file/d/1JJFP2i0FQjtVKTACzwl2xE3fBy-bSpSQ/preview",
     Grade: "12",
     subject: "Physics",
   },

@@ -57,11 +57,6 @@ const MyPage = () => {
 
   const lessons = [
     {
-      title: "Electrons And Protons",
-      description: "Chapter 1: Electrons and protons",
-      link: "#pdf",
-    },
-    {
       title: "Motion",
       description: "Circular Motion",
       link: "#pdf",
@@ -84,6 +79,46 @@ const MyPage = () => {
     {
       title: "Mechanics",
       description: "Rotational Dynamics",
+      link: "#pdf",
+    },
+    {
+      title: "Wave Nature of light",
+      description: "Nature and Propagation of Light",
+      link: "#pdf",
+    },
+    {
+      title: "Wave Nature of light",
+      description: "Diffraction (Proves wave nature of Light )",
+      link: "#pdf",
+    },
+    {
+      title: "Wave Nature of light",
+      description: "Interference of light",
+      link: "#pdf",
+    },
+    {
+      title: "Modern Physics",
+      description: " Electrons and protons",
+      link: "#pdf",
+    },
+    {
+      title: "Modern Physics",
+      description: "Energy",
+      link: "#pdf",
+    },
+    {
+      title: "Modern Physics",
+      description: "Particle Physics & Cosmology",
+      link: "#pdf",
+    },
+    {
+      title: "Modern Physics",
+      description: "Quantization",
+      link: "#pdf",
+    },
+    {
+      title: "Modern Physics",
+      description: "Semiconductor Devices",
       link: "#pdf",
     },
   ];

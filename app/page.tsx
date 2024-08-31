@@ -63,6 +63,14 @@ const MyPage = () => {
       link: "/Questions",
     },
   ];
+  const items2 = [
+    {
+      title: "Class 11/12",
+      description: "English Project Cover Page(Remastered & Approved",
+      link: "/downloadables/English (2).pdf",
+      download: true,
+    },
+  ];
 
   return (
     <main>
@@ -82,6 +90,19 @@ const MyPage = () => {
           <StarsBackground />
           <HoverEffect
             items={items}
+            className="my-custom-class fade-from-right"
+          />
+          <h2 className="relative z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl text-center tracking-tight font-medium flex justify-center items-center gap-2 sm:mx-4 md:gap-8">
+            <span className="clipbg bg-gradient-to-b from-neutral-800 via-white to-white bg-clip-text text-transparent">
+              Miscellenous
+            </span>
+            <span className="text-white text-lg font-bold">×</span>
+            <span className="clipbg bg-gradient-to-b from-neutral-800 via-white to-white bg-clip-text text-transparent">
+              Files
+            </span>
+          </h2>
+          <HoverEffect
+            items={items2}
             className="my-custom-class fade-from-right"
           />
         </div>

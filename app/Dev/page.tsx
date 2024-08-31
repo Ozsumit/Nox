@@ -279,6 +279,10 @@ const MyPage = () => {
   Provided us With: All notes of Class 9 Website Designing
 `}{" "}
                 <hr className="  border-gray-400 border-dashed" />
+                {`
+  Name: Brij kumar Singh,
+  Provided us With: All notes of Class 11 & 12 Physics`}{" "}
+                <hr className="  border-gray-400 border-dashed" />
               </pre>
             </div>
             {/* <CounterSection /> */}
