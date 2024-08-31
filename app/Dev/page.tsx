@@ -263,8 +263,8 @@ const MyPage = () => {
               email="john@example.com"
             />
           </div>
-          <div className="flex flex-row justify-center items-center">
-            <div className=" sm:w-11/12 lg:w-80 backdrop:blur-md mb-4 z-50 bg-Bl border border-white dark:border-white/[0.2] text-gray-400 p-4 rounded-lg">
+          <div className="flex flex-row justify-start items-center">
+            <div className=" sm:w-11/12 lg:w-144 backdrop:blur-md mb-4 z-50 bg-Bl border border-white dark:border-white/[0.2] text-gray-400 p-4 rounded-lg">
               <p className="font-bold text-white text-lg mb-2">
                 Special Thanks To Our Copy Providers
               </p>
@@ -282,7 +282,7 @@ const MyPage = () => {
                 {`
   Name: Brij kumar Singh,
   Provided us With: All notes of Class 11 & 12 Physics`}{" "}
-                <hr className="  border-gray-400 border-dashed" />
+                {/* <hr className="  border-gray-400 border-dashed" /> */}
               </pre>
             </div>
             {/* <CounterSection /> */}
