@@ -43,11 +43,11 @@ const DonatePage = () => {
       >
         <h2 className="text-3xl md:text-5xl text-center font-medium mb-8">
           <span className="bg-clip-text text-transparent bg-gradient-to-b from-neutral-400 to-white">
-            Support
+            Donate
           </span>
           <span className="text-white text-lg font-thin mx-2">x</span>
           <span className="bg-clip-text text-transparent bg-gradient-to-b from-neutral-400 to-white">
-            Our Cause
+            Us
           </span>
         </h2>
 
