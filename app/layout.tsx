@@ -6,7 +6,7 @@ import "./globals.css";
 import Image from "next/image";
 import logo from "../components/image/logo.svg";
 import SearchEngine from "@/components/ui/searchEngine";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import React, { useCallback } from "react";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { toast, Toaster } from "sonner";
