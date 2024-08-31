@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useCallback } from "react";
+import React, { useCallback, useEffect } from "react";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { toast, Toaster } from "sonner";
 import Link from "next/link";
@@ -31,7 +31,11 @@ const MyPage = () => {
       }
     );
   }, []);
-  showToast();
+
+  useEffect(() => {
+    showToast();
+  }, [showToast]);
+
   const items = [
     {
       title: "Class 9",
