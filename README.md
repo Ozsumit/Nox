@@ -33,8 +33,8 @@ This is the first time i've worked with React framework. Must say, it was a roug
 
  How To Contribute
  File Restrictions: 
-# Must be .pdf file type of less than 30mb of file size.
-# File must be readable under all conditions. Good Handwriting and clear picture quality are appreciated
+ Must be .pdf file type of less than 30mb of file size.
+ File must be readable under all conditions. Good Handwriting and clear picture quality are appreciated
 File can be shared to the developer by contacting through E-mail, Instagram, Whatsapp or Messenger.(File Upload Button Coming Soon) 
 
 Naming Conventions:-
