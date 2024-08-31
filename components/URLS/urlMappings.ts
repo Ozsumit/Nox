@@ -198,7 +198,7 @@ export const urlMappings: {
     subject: "Physics",
   },
   // =============================Physics Grade 12=================
-  "Chapter 1: Electrons and protons": {
+  "Electrons and protons": {
     url: "https://drive.google.com/file/d/1WZjH-5uFqCl46GQSPWDBhq_h3hhBJ4uV/preview",
     Grade: "12",
     subject: "Physics",
@@ -243,7 +243,8 @@ export const urlMappings: {
     Grade: "12",
     subject: "Physics",
   },
- "Energy": {
+
+  Energy: {
     url: "https://drive.google.com/file/d/1_HiHXAkcxR18XTPl63BBXqwMb1WfdG4i/preview",
     Grade: "12",
     subject: "Physics",
@@ -253,7 +254,7 @@ export const urlMappings: {
     Grade: "12",
     subject: "Physics",
   },
-  "Quantization ": {
+  Quantization: {
     url: "https://drive.google.com/file/d/1p453U6Nq9EOBlC1aNO5D8__4tzpGXdl1/preview",
     Grade: "12",
     subject: "Physics",

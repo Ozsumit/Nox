@@ -25,6 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <title>Twilight</title>
       <body className="fadefromblack opacity-0 h-screen rounded-md bg-black flex flex-col w-auto px-4 pt-2 scroll-smooth">
         <div>
           <div className="navigation flex justify-between items-center text-2xl flex-col lg:flex-row">

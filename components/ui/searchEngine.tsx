@@ -79,7 +79,7 @@ const SearchEngine: React.FC = () => {
           type="text"
           value={searchTerm}
           onChange={handleSearchChange}
-          placeholder="Find any file in a whim"
+          placeholder="Quickly find any file in a jiffy"
           className="w-full lg:w-144 h-12 text-white bg-black rounded-md border border-white/20 px-4 py-2 text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-neutral-50 focus:border-transparent transition duration-200 ease-in-out"
         />
         <div className="mt-4">

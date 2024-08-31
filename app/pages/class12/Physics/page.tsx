@@ -12,6 +12,7 @@ import { X } from "lucide-react";
 import { toast, Toaster } from "sonner";
 
 import { Breadcrumb } from "@/components/ui/breadcrumbs";
+import Footer from "@/components/ui/footer";
 const MyPage = () => {
   const showToast = useCallback(() => {
     toast(
@@ -124,7 +125,7 @@ const MyPage = () => {
     },
     {
       title: "Modern Physics",
-      description: " Electrons and protons",
+      description: "Electrons and protons",
       link: "#pdf",
     },
     {
@@ -203,6 +204,7 @@ const MyPage = () => {
             )}
           </div>
         </div>
+        <Footer items={lessons} />
       </div>
     </main>
   );

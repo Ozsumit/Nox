@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useCallback, useEffect } from "react";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { toast, Toaster } from "sonner";
@@ -7,8 +6,9 @@ import Link from "next/link";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 import { X } from "lucide-react";
+import Footer from "@/components/ui/footer"; // Import the Footer component
 
-const MyPage = () => {
+const MyPage: React.FC = () => {
   const showToast = useCallback(() => {
     setTimeout(() => {
       toast(
@@ -43,7 +43,6 @@ const MyPage = () => {
             color: "#fff",
             border: "none",
             marginTop: "3rem",
-            // translate: "0 -100",?
           },
         }
       );
@@ -81,10 +80,11 @@ const MyPage = () => {
       link: "/Questions",
     },
   ];
+
   const items2 = [
     {
       title: "Class 11/12",
-      description: "English Project Cover Page(Remastered & Approved",
+      description: "English Project Cover Page (Remastered & Approved)",
       link: "/downloadables/English (2).pdf",
       download: true,
     },
@@ -112,7 +112,7 @@ const MyPage = () => {
           />
           <h2 className="relative z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl text-center tracking-tight font-medium flex justify-center items-center gap-2 sm:mx-4 md:gap-8">
             <span className="clipbg bg-gradient-to-b from-neutral-800 via-white to-white bg-clip-text text-transparent">
-              Miscellenous
+              Miscellaneous
             </span>
             <span className="text-white text-lg font-bold">×</span>
             <span className="clipbg bg-gradient-to-b from-neutral-800 via-white to-white bg-clip-text text-transparent">
@@ -124,8 +124,10 @@ const MyPage = () => {
             className="my-custom-class fade-from-right"
           />
         </div>
+        <Footer items={items} />{" "}
       </div>
       <Toaster richColors />
+      {/* Pass the items array to the Footer component */}
     </main>
   );
 };

@@ -9,7 +9,6 @@ interface IframeProps {
 
 const Iframe: React.FC<IframeProps> = ({ identifier }) => {
   const iframeRef = useRef<HTMLIFrameElement | null>(null);
-  const [iframeLoaded, setIframeLoaded] = useState(false);
   const [showBackToTop, setShowBackToTop] = useState(false);
 
   const requestFullScreen = () => {
@@ -34,15 +33,14 @@ const Iframe: React.FC<IframeProps> = ({ identifier }) => {
     }
   };
 
-  const handleIframeLoad = () => {
-    setIframeLoaded(true);
-  };
-
   const handleScroll = () => {
-    if (window.scrollY > 300) {
-      setShowBackToTop(true);
-    } else {
-      setShowBackToTop(false);
+    if (iframeRef.current) {
+      const iframeRect = iframeRef.current.getBoundingClientRect();
+      if (iframeRect.top < 0 && iframeRect.bottom > 0) {
+        setShowBackToTop(true);
+      } else {
+        setShowBackToTop(false);
+      }
     }
   };
 
@@ -54,14 +52,6 @@ const Iframe: React.FC<IframeProps> = ({ identifier }) => {
   };
 
   useEffect(() => {
-    const iframe = iframeRef.current;
-    if (iframe) {
-      iframe.addEventListener("load", handleIframeLoad);
-      return () => {
-        iframe.removeEventListener("load", handleIframeLoad);
-      };
-    }
-
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -69,6 +59,10 @@ const Iframe: React.FC<IframeProps> = ({ identifier }) => {
   }, []);
 
   const source = urlMappings[identifier]?.url || "";
+
+  if (!source) {
+    return null; // Don't render anything if there's no source
+  }
 
   return (
     <div className="relative">
@@ -81,23 +75,21 @@ const Iframe: React.FC<IframeProps> = ({ identifier }) => {
         height="680"
         title={identifier}
       ></iframe>
-      {iframeLoaded && (
-        <div>
-          <button
-            title="Fullscreen"
-            onClick={requestFullScreen}
-            className="absolute top-4 w-14 h-14 flex justify-center items-center right-2 px-4 py-2 bg-slate-950 text-white rounded"
-          >
-            <FaExpand />
-          </button>
-          <button
-            title="Back to Top"
-            onClick={scrollToTop}
-            className="  fixed right-4 w-12 h-12 flex justify-center items-center bg-transparent border border-white text-white rounded-full shadow-lg"
-          >
-            <FaArrowUp />
-          </button>
-        </div>
+      <button
+        title="Fullscreen"
+        onClick={requestFullScreen}
+        className="absolute top-4 right-2 w-14 h-14 flex justify-center items-center bg-slate-950 text-white rounded"
+      >
+        <FaExpand />
+      </button>
+      {showBackToTop && (
+        <button
+          title="Back to Top"
+          onClick={scrollToTop}
+          className="absolute bottom-4 right-2 w-14 h-14 flex justify-center items-center bg-slate-950 border border-white text-white rounded-full shadow-lg"
+        >
+          <FaArrowUp />
+        </button>
       )}
     </div>
   );
