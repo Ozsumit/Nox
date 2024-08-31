@@ -56,11 +56,7 @@ const MyPage = () => {
   ];
 
   const lessons = [
-    {
-      title: "Motion",
-      description: "Circular Motion",
-      link: "#pdf",
-    },
+  
     {
       title: "Electricity & Magnetism",
       description: "Magnetic Properties of Materials",

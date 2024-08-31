@@ -57,6 +57,11 @@ const MyPage = () => {
 
   const lessons = [
     {
+      title: "Motion",
+      description: "Circular Motion",
+      link: "#pdf",
+    },
+    {
       title: "Kinematics",
       description: "Chapter 1: Kinematics",
       link: "#pdf",
