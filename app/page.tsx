@@ -14,7 +14,7 @@ const MyPage = () => {
       toast(
         <div className="flex items-center justify-between w-full">
           <span>
-            The admin needs help!!! quick{" "}
+            Admin Needs Urgent Help.{` `}
             <a
               href="/help" // Replace with your actual help page URL
               className="text-green-400 hover:text-green-200 "
@@ -25,7 +25,7 @@ const MyPage = () => {
                 // router.push('/help');
               }}
             >
-              Click here to help
+              Know why..
             </a>
           </span>
           <button
@@ -42,6 +42,8 @@ const MyPage = () => {
             background: "#850F0F",
             color: "#fff",
             border: "none",
+            marginTop: "3rem",
+            // translate: "0 -100",?
           },
         }
       );

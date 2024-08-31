@@ -56,7 +56,7 @@ const ResultViewer: React.FC<ResultViewerProps> = ({ result, iframeRef }) => {
   }, [iframeRef]);
 
   return (
-    <div className="mt-4 w-full flex flex-col items-center relative">
+    <div className="mt-4 w-auto flex flex-col items-center relative">
       <h2 className="text-xl font-bold mb-2">{result.description}</h2>
       <iframe
         ref={iframeRef || localIframeRef} // Use the passed ref or the local one

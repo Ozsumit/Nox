@@ -18,8 +18,8 @@ import SearchEngine from "@/components/ui/searchEngine";
 const MyPage = () => {
   return (
     <main>
-      <div className=" items-center h-screen rounded-md bg-black flex flex-col w-auto lg:px-28 sm:px-4 pt-2">
-        <div className="hero flex justify-center  flex-col lg:pt-16 sm:pt-0 sm:w-screen w-auto sm:border-t-0 sm:border-t-white">
+      <div className=" sengine overflow-x-hidden  items-center h-screen rounded-md bg-black flex flex-col w-[95vw] lg:px-28 sm:px-4 pt-2">
+        <div className="hero flex justify-center  flex-col lg:pt-16 sm:pt-0 sm:w-screen w-[95vw] sm:border-t-0 sm:border-t-white">
           {/* <ContactUs />? */}
           {/* <ContactUs /> */}
           <SearchEngine />
