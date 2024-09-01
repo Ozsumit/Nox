@@ -15,6 +15,7 @@ import Link from "next/link";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 import { X } from "lucide-react";
+import Footer from "@/components/ui/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -87,7 +88,9 @@ export default function RootLayout({
 
           <Toaster />
         </div>
-        <div className="flex flex-col justify-center items-center w-[95vw]"></div>
+        <div className="flex flex-col justify-center items-center w-[95vw]">
+          {/* <Footer items={items} /> */}
+        </div>
       </body>
     </html>
   );

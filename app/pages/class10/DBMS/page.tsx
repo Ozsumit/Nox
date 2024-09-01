@@ -8,6 +8,7 @@ import { StarsBackground } from "@/components/ui/stars-background";
 import Iframe from "@/components/ui/iframe";
 import Link from "next/link";
 import { Breadcrumb } from "@/components/ui/breadcrumbs";
+import Footer from "@/components/ui/footer";
 const MyPage = () => {
   const [visibleLessons, setVisibleLessons] = useState<string | null>(null);
   const [currentIdentifier, setCurrentIdentifier] = useState<string>("default");
@@ -134,13 +135,14 @@ const MyPage = () => {
                 height={400}
                 width="100%"
                 className="mb-4 rounded-7xl"
-                  baseColor="#000000"
-                  highlightColor="#383838"
-                />
+                baseColor="#000000"
+                highlightColor="#383838"
+              />
             ) : (
               <Iframe identifier={currentIdentifier} />
             )}
           </div>
+          <Footer items={lessons} />
         </div>
       </div>
     </main>

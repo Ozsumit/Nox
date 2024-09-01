@@ -7,6 +7,7 @@ import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 import Iframe from "@/components/ui/iframe";
 import { Breadcrumb } from "@/components/ui/breadcrumbs";
+import Footer from "@/components/ui/footer";
 const MyPage = () => {
   const [visibleLessons, setVisibleLessons] = useState<string | null>(null);
   const [currentIdentifier, setCurrentIdentifier] = useState<string>("default");
@@ -174,6 +175,8 @@ const MyPage = () => {
               <Iframe identifier={currentIdentifier} />
             )}
           </div>
+          <Footer items={lessons} />
+
         </div>
       </div>
     </main>
