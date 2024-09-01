@@ -59,7 +59,7 @@ export default function RootLayout({
                 </button>
               </Link>
             </div>
-
+            {/* <SearchEngine/> */}
             <div className="nav2 md:hidden lg:hidden flex-row mb-10 flex justify-center border-l border-white dark:border-white/[0.2] items-center py-3 group-hover:border-slate-70">
               <Link href="/" className="font-mono">
                 Home
