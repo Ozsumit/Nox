@@ -13,7 +13,7 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ items }) => {
   return (
-    <footer className="w-full py-6 bg-black backdrop:blur-md z-50 font-mono border border-white dark:border-white/[0.2] text-gray-400 p-4 rounded-lg  flex flex-col items-center">
+    <footer className="w-[97vw] lg:w-full py-6 bg-black backdrop:blur-md z-50 font-mono border border-white dark:border-white/[0.2] text-gray-400 p-4 rounded-lg  flex flex-col items-center">
       <div className="text-center mb-4">
         <h3 className="text-lg font-semibold">
           Explore a Universe of Knowledge with The Repo × Twilight

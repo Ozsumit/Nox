@@ -37,103 +37,7 @@ html {
   -webkit-animation: fadefromblack 1s ease-in-out 1 forwards;
 }
 
-.nav2 {
-  margin-bottom: 0rem;
-  border: 1px solid white;
-  z-index: 100;
-  justify-content: center;
-  align-items: center;
-  justify-self: center;
-
-  /* top: 90dvh; */
-
-  width: auto;
-  height: auto;
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(15px);
-  background-color: #0000004b;
-  border-radius: 0.8rem;
-  -webkit-border-radius: 0.8rem;
-  -moz-border-radius: 0.8rem;
-  -ms-border-radius: 0.8rem;
-  -o-border-radius: 0.8rem;
-
-  a {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    /* border-right: 1px solid white; */
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    color: var(--bfont);
-    text-decoration: none;
-    color: var(--text);
-    font-family: "Gemunu Libre", sans-serif;
-    width: 78px;
-    font-size: 1.1rem;
-    color: #d6d6d6;
-  }
-
-  a::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background-color: #f1f1f1;
-    transition: width 0.3s ease, left 0.3s ease;
-  }
-
-  a:hover {
-    color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-
-  a:hover::before {
-    width: 100%;
-    left: 0;
-  }
-}
-
 .nav {
-  margin-bottom: 0rem;
-  position: -webkit-sticky;
-  position: sticky;
-  z-index: 1;
-
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  gap: 4vw;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  /* width: 55vh; */
-  height: 12vh;
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(15px);
-  background-color: #000000;
-  border-radius: 0.8rem;
-  -webkit-border-radius: 0.8rem;
-  -moz-border-radius: 0.8rem;
-  -ms-border-radius: 0.8rem;
-  -o-border-radius: 0.8rem;
-
   a {
     position: relative;
     display: flex;
@@ -143,8 +47,14 @@ html {
     text-decoration: none;
     font-family: "Gemunu Libre", sans-serif;
     font-size: 1.2rem;
-    padding: 0.5rem 0.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* padding: 0.5rem 0.3rem; */
     transition: color 0.3s ease, background-color 0.3s ease;
+    -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+    -moz-transition: color 0.3s ease, background-color 0.3s ease;
+    -ms-transition: color 0.3s ease, background-color 0.3s ease;
+    -o-transition: color 0.3s ease, background-color 0.3s ease;
   }
 
   a::before {
