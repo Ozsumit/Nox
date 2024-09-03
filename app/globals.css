@@ -30,7 +30,8 @@
 }
 html {
   scroll-behavior: smooth;
-  scrollbar-width: none;
+  /* scrollbar-width: none;
+   */
 }
 .fadefromblack {
   animation: fadefromblack 1s ease-in-out 1 forwards;

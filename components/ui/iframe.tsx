@@ -69,7 +69,7 @@ const Iframe: React.FC<IframeProps> = ({ identifier }) => {
       <iframe
         ref={iframeRef}
         id={identifier}
-        className="rounded-lg z-5"
+        className=" lg:mx-0 mx-2 max-w-[90vw] rounded-lg z-5"
         src={source}
         width="540"
         height="680"

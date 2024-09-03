@@ -71,7 +71,7 @@ export default function RootLayout({
       <title>Twilight</title>
       <body className="bg-black text-white min-h-screen mx-4 lg:mx-0 flex flex-col">
         <header
-          className={`fixed w-full z-50 transition-all duration-300 ${
+          className={` w-full z-50 transition-all duration-300 ${
             scrolled ? "" : "bg-transparent"
           }`}
         >
@@ -84,7 +84,7 @@ export default function RootLayout({
               <nav
                 className={`hidden md:flex border transition-all duration-300 nav bg-black  border-white dark:border-white/[0.2] group-hover:border-slate-70 items-center justify-around px-4 py-2 rounded-md ${
                   scrolled ? "" : "bg-transparent"
-                }  ${showNav ? "translate-y-0" : "-translate-y-40 "}`}
+                }  `}
               >
                 <NavItem href="/" icon={Home} label="Home" />
                 <NavItem href="/contact" icon={Phone} label="Contact" />
@@ -128,7 +128,7 @@ export default function RootLayout({
           </div>
         </header>
 
-        <main className=" pt-20 justify-center items-center flex-col flex">
+        <main className=" justify-center items-center flex-col flex">
           {children}
         </main>
 
