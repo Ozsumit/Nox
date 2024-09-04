@@ -90,6 +90,9 @@ export default function RootLayout({
                 <NavItem href="/contact" icon={Phone} label="Contact" />
                 <NavItem href="/Dev" icon={Code} label="Dev" />
                 <NavItem href="/QuickFind" icon={Search} label="QFind" />
+              </nav>
+              <div className=" hidden P-4 mr-4 lg:flex">
+                {" "}
                 <Link
                   href="/donate"
                   className="px-4 py-2 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-md hover:from-orange-600 hover:to-pink-600 transition-all duration-300 flex items-center space-x-2"
@@ -97,8 +100,7 @@ export default function RootLayout({
                   <span>Donate</span>
                   <DollarSign size={20} />
                 </Link>
-              </nav>
-              <div className=" hidden lg:flex"></div>
+              </div>
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="md:hidden  mr-16 text-white"

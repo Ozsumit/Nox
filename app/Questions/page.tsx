@@ -106,25 +106,13 @@ const MyPage = () => {
             className="hidden"
             onCardClick={handleCardClick}
           />
-          {isLoading ? (
-            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 rounded-5xl">
-              {[...Array(6)].map((_, index) => (
-                <Skeleton
-                  key={index}
-                  height={150}
-                  className="mb-4 rounded-7xl"
-                  baseColor="#090909"
-                  highlightColor="#444"
-                />
-              ))}
-            </div>
-          ) : (
-            <HoverEffect
-              items={lessons}
-              className="lesson"
-              onCardClick={handleCardClick}
-            />
-          )}
+
+          <HoverEffect
+            items={lessons}
+            className="lesson"
+            onCardClick={handleCardClick}
+          />
+
           <div
             id="pdf"
             className="flex justify-center items-center my-16 rounded-4xl"

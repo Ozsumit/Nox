@@ -263,5 +263,10 @@ export const urlMappings: {
     url: "https://drive.google.com/file/d/1JJFP2i0FQjtVKTACzwl2xE3fBy-bSpSQ/preview",
     Grade: "12",
     subject: "Physics",
+  
   },
+
+
+
+
 };
