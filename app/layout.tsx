@@ -82,7 +82,7 @@ export default function RootLayout({
               </Link>
 
               <nav
-                className={`hidden md:flex border transition-all duration-300 nav bg-black  border-white dark:border-white/[0.2] group-hover:border-slate-70 items-center justify-around px-4 py-2 rounded-md ${
+                className={`hidden md:flex border transition-all duration-300 nav bg-black  border border-white/[0.2] dark:border-white/[0.2] group-hover:border-slate-70 items-center justify-around px-4 py-2 rounded-md ${
                   scrolled ? "" : "bg-transparent"
                 }  `}
               >
