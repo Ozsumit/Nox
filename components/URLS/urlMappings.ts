@@ -223,6 +223,11 @@ export const urlMappings: {
     Grade: "12",
     subject: "Physics",
   },
+  "Fluid Dynamics": {
+    url: "https://drive.google.com/file/d/1GFu332Go6iLANwU6bY59i-vv5hhjRjUV/preview",
+    Grade: "12",
+    subject: "Physics",
+  },
   "Alternating Current": {
     url: "https://drive.google.com/file/d/1GoOS5D6HI5cCMzEKnkWmcACsGnDpnlmT/preview",
     Grade: "12",
@@ -263,10 +268,5 @@ export const urlMappings: {
     url: "https://drive.google.com/file/d/1JJFP2i0FQjtVKTACzwl2xE3fBy-bSpSQ/preview",
     Grade: "12",
     subject: "Physics",
-  
   },
-
-
-
-
 };

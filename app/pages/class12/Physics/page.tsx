@@ -109,6 +109,11 @@ const MyPage = () => {
       link: "#pdf",
     },
     {
+      title: "Mechanics",
+      description: "Fluid Dynamics",
+      link: "#pdf",
+    },
+    {
       title: "Wave Nature of light",
       description: "Nature and Propagation of Light",
       link: "#pdf",

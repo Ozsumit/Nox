@@ -20,16 +20,51 @@ interface CardItem {
   download?: boolean;
 }
 
-type CardGroups = {
-  [key: string]: CardItem[];
-};
+const devPdfs: CardItem[] = [
+  {
+    title: "Class 11/12",
+    description: "English Project Cover Page (Remastered & Approved)",
+    link: "/public/downloadables/A41.pdf",
+    download: true,
+  },
+  {
+    title: "Unit 2 C-10/DBMS",
+    description: "Database Design",
+    link: "#pdf",
+  },
+];
+
+const reactCards: CardItem[] = [
+  {
+    title: "React Basics",
+    description: "Introduction to React Components",
+    link: "#react",
+  },
+  {
+    title: "Next.js Fundamentals",
+    description: "Server-Side Rendering with Next.js",
+    link: "#nextjs",
+  },
+];
+
+const gitCards: CardItem[] = [
+  {
+    title: "Git Basics",
+    description: "Version Control Fundamentals",
+    link: "#git",
+  },
+  {
+    title: "GitHub Workflow",
+    description: "Collaborative Development with GitHub",
+    link: "#github",
+  },
+];
 
 const MyPage: React.FC = () => {
   const [currentIdentifier, setCurrentIdentifier] = useState<string>("default");
   const [isLoading, setIsLoading] = useState<boolean>(true);
-  const [showCards, setShowCards] = useState<boolean>(false);
+  const [showComponent, setShowComponent] = useState<string | null>(null);
   const [inputValue, setInputValue] = useState<string>("");
-  const [visibleLessons, setVisibleLessons] = useState<string | null>(null);
   const [currentCardGroup, setCurrentCardGroup] = useState<CardItem[]>([]);
 
   useEffect(() => {
@@ -39,65 +74,27 @@ const MyPage: React.FC = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const toggleLessons = (subjectTitle: string) => {
-    setVisibleLessons((currentVisible) =>
-      currentVisible === subjectTitle ? null : subjectTitle
-    );
-  };
-
   const handleCardClick = (title: string) => {
     setCurrentIdentifier(title);
   };
 
-  const cardGroups: CardGroups = {
-    "dev pdfs": [
-      {
-        title: "Class 11/12",
-        description: "English Project Cover Page (Remastered & Approved)",
-        link: "/public/downloadables/A41.pdf",
-        download: true,
-      },
-      {
-        title: "Unit 2 C-10/DBMS",
-        description: "Database Design",
-        link: "#pdf",
-      },
-    ],
-    "npm run dev": [
-      {
-        title: "React Basics",
-        description: "Introduction to React Components",
-        link: "#react",
-      },
-      {
-        title: "Next.js Fundamentals",
-        description: "Server-Side Rendering with Next.js",
-        link: "#nextjs",
-      },
-    ],
-    "git push": [
-      {
-        title: "Git Basics",
-        description: "Version Control Fundamentals",
-        link: "#git",
-      },
-      {
-        title: "GitHub Workflow",
-        description: "Collaborative Development with GitHub",
-        link: "#github",
-      },
-    ],
-  };
-
-  const checkKeywords = (value: string): boolean => {
-    const keywords = Object.keys(cardGroups);
-    for (const keyword of keywords) {
-      if (value.toLowerCase().includes(keyword)) {
-        setCurrentCardGroup(cardGroups[keyword]);
-        return true;
-      }
+  const checkKeywords = (value: string): void => {
+    const lowercaseValue = value.toLowerCase();
+    if (lowercaseValue.includes("dev pdfs")) {
+      setCurrentCardGroup(devPdfs);
+      setShowComponent("cards");
+    } else if (lowercaseValue.includes("npm run dev")) {
+      setCurrentCardGroup(reactCards);
+      setShowComponent("cards");
+    } else if (lowercaseValue.includes("git push")) {
+      setCurrentCardGroup(gitCards);
+      setShowComponent("cards");
+    } else if (lowercaseValue.includes("developer note")) {
+      setShowComponent("developerNote");
+    } else {
+      setShowComponent(null);
+      setCurrentCardGroup([]);
     }
-    return false;
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -106,12 +103,7 @@ const MyPage: React.FC = () => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (checkKeywords(inputValue)) {
-      setShowCards(true);
-    } else {
-      setShowCards(false);
-      setCurrentCardGroup([]);
-    }
+    checkKeywords(inputValue);
   };
 
   return (
@@ -195,18 +187,19 @@ const MyPage: React.FC = () => {
             {/* <CounterSection /> */}
           </div>
           <DeveloperNote />
+        </div>
+        {showComponent === "cards" && (
           <HoverEffect
             items={currentCardGroup}
             onCardClick={handleCardClick}
-            className={`my-custom-class fade-from-right ${
-              showCards ? "grid" : "hidden"
-            }`}
+            className="my-custom-class fade-from-right mt-8"
           />
+        )}
+        {showComponent === "developerNote" && <DeveloperNote />}
+        {showComponent === "cards" && currentIdentifier !== "default" && (
           <div
             id="pdf"
-            className={`hidden justify-center items-center my-16 rounded-4xl$
-              showCards ? "flex" : "hidden"
-            }`}
+            className="flex justify-center items-center my-16 rounded-4xl"
           >
             {isLoading ? (
               <Skeleton
@@ -219,8 +212,7 @@ const MyPage: React.FC = () => {
               <Iframe identifier={currentIdentifier} />
             )}
           </div>
-          /
-        </div>
+        )}{" "}
         <form
           onSubmit={handleSubmit}
           className="flex flex-col justify-center items-center gap-6 mt-4"
@@ -232,7 +224,7 @@ const MyPage: React.FC = () => {
             onChange={handleInputChange}
           />
           <button type="submit" className="bg-accent w-32 h-9 rounded-md">
-            {showCards ? "Hide" : "Admin"}
+            Execute
           </button>
         </form>
       </div>
