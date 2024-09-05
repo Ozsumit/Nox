@@ -126,7 +126,7 @@ const MyPage: React.FC = () => {
         </div>
         <Footer items={items} />{" "}
       </div>
-      <Toaster richColors />
+{/*       <Toaster richColors /> */}
       {/* Pass the items array to the Footer component */}
     </main>
   );
