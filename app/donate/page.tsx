@@ -62,7 +62,7 @@ const DonatePage = () => {
               </p>
               <button
                 onClick={() => setShowQR(true)}
-                className="bg-orange-400 hover:bg-accent/80 mt-4 text-white font-bold py-2 px-4 rounded inline-flex items-center"
+                className="bg-[#94fc02] hover:bg-accent mt-4 hover:text-white transition-all duration-300 ease-linear  text-slate-700 font-bold py-2 px-4 rounded inline-flex items-center"
               >
                 <QrCode className="mr-2" />
                 Donate with QR Code

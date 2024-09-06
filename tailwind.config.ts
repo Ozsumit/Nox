@@ -11,8 +11,8 @@ const config: Config = {
       colors: {
         grays: "#1F2020",
         bgblack: "#0F0F0F",
-        accent: "#c9b4b3",
-        accenth: "#c9b4c7",
+        accent: "#294c83",
+        accenth: "#294c83",
         blackBl: "#0000025",
       },
       spacing: {
