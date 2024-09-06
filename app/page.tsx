@@ -9,49 +9,49 @@ import { X } from "lucide-react";
 import Footer from "@/components/ui/footer"; // Import the Footer component
 
 const MyPage: React.FC = () => {
-  const showToast = useCallback(() => {
-    setTimeout(() => {
-      toast(
-        <div className="flex items-center justify-between w-full">
-          <span>
-            Admin Needs Urgent Help.{` `}
-            <a
-              href="/help" // Replace with your actual help page URL
-              className="text-green-400 hover:text-green-200 "
-              onClick={(e) => {
-                e.preventDefault();
-                toast.dismiss();
-                // Add your navigation logic here, e.g.:
-                // router.push('/help');
-              }}
-            >
-              Know why..
-            </a>
-          </span>
-          <button
-            onClick={() => toast.dismiss()}
-            className="ml-2  hover:text-gray-700"
-          >
-            <X size={18} />
-          </button>
-        </div>,
-        {
-          duration: 10000,
-          position: "top-right",
-          style: {
-            background: "#850F0F",
-            color: "#fff",
-            border: "none",
-            marginTop: "3rem",
-          },
-        }
-      );
-    }, 3000);
-  }, []);
+  // const showToast = useCallback(() => {
+  //   setTimeout(() => {
+  //     toast(
+  //       <div className="flex items-center justify-between w-full">
+  //         <span>
+  //           Admin Needs Urgent Help.{` `}
+  //           <a
+  //             href="/help" // Replace with your actual help page URL
+  //             className="text-green-400 hover:text-green-200 "
+  //             onClick={(e) => {
+  //               e.preventDefault();
+  //               toast.dismiss();
+  //               // Add your navigation logic here, e.g.:
+  //               // router.push('/help');
+  //             }}
+  //           >
+  //             Know why..
+  //           </a>
+  //         </span>
+  //         <button
+  //           onClick={() => toast.dismiss()}
+  //           className="ml-2  hover:text-gray-700"
+  //         >
+  //           <X size={18} />
+  //         </button>
+  //       </div>,
+  //       {
+  //         duration: 10000,
+  //         position: "top-right",
+  //         style: {
+  //           background: "#850F0F",
+  //           color: "#fff",
+  //           border: "none",
+  //           marginTop: "3rem",
+  //         },
+  //       }
+  //     );
+  //   }, 3000);
+  // }, []);
 
-  useEffect(() => {
-    showToast();
-  }, [showToast]);
+  // useEffect(() => {
+  //   showToast();
+  // }, [showToast]);
 
   const items = [
     {
@@ -126,7 +126,7 @@ const MyPage: React.FC = () => {
         </div>
         <Footer items={items} />{" "}
       </div>
-{/*       <Toaster richColors /> */}
+      {/*       <Toaster richColors /> */}
       {/* Pass the items array to the Footer component */}
     </main>
   );

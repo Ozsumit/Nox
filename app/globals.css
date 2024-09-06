@@ -66,7 +66,7 @@ html {
     left: 50%;
     width: 0;
     height: 2px;
-    background-color: #f1f1f1;
+    background-color: #4ade80;
     transition: width 0.3s ease, left 0.3s ease;
   }
 

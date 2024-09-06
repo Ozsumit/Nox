@@ -14,33 +14,6 @@ import { toast, Toaster } from "sonner";
 import { Breadcrumb } from "@/components/ui/breadcrumbs";
 import Footer from "@/components/ui/footer";
 const MyPage = () => {
-  const showToast = useCallback(() => {
-    toast(
-      <div className="flex items-center justify-between">
-        <div>
-          The admin needs help!!! quick{" "}
-          <Link href="/donate" className="text-blue-500 hover:text-orange-500">
-            Click here to help
-          </Link>
-        </div>
-        <button
-          onClick={() => toast.dismiss()}
-          className="ml-2 text-gray-500 hover:text-gray-700"
-        >
-          <X size={18} />
-        </button>
-      </div>,
-      {
-        duration: 10000,
-        position: "top-right",
-      }
-    );
-  }, []);
-
-  useEffect(() => {
-    showToast();
-  }, [showToast]);
-
   const [visibleLessons, setVisibleLessons] = useState<string | null>(null);
   const [currentIdentifier, setCurrentIdentifier] = useState<string>("default");
   const [isLoading, setIsLoading] = useState(true);
