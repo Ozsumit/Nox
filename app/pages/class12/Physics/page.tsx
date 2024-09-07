@@ -127,7 +127,7 @@ const MyPage = () => {
       link: "#pdf",
     },
     {
-      title: "MCQs for Waves, Motion and Mechanics",
+      title: "MCQs For Waves, Motion and Mechanics",
       description: "MCQs",
       link: "#pdf",
     },
