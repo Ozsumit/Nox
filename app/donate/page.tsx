@@ -54,7 +54,7 @@ const DonatePage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
           <div className="w-full backdrop-blur-md mb-4 border border-white/20 p-6 rounded-lg">
             <p className="font-bold text-white text-lg mb-4">
-              Admin needs urgent help!
+              Admin needs urgent help
             </p>
             <pre className="whitespace-pre-wrap">
               <p className="text-pretty">
