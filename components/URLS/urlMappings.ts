@@ -269,4 +269,9 @@ export const urlMappings: {
     Grade: "12",
     subject: "Physics",
   },
+  MCQs: {
+    url: "https://drive.google.com/file/d/1N_U1fClYhiT4_a5SjScu-Rt9hwIvcnXU/preview",
+    Grade: "12",
+    subject: "Physics",
+  },
 };

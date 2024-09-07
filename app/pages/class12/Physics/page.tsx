@@ -126,6 +126,11 @@ const MyPage = () => {
       description: "Semiconductor Devices",
       link: "#pdf",
     },
+    {
+      title: "MCQs for Waves, Motion and Mechanics",
+      description: "MCQs",
+      link: "#pdf",
+    },
   ];
   const pagination = [
     { label: "Home", href: "/" },
