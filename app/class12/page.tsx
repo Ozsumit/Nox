@@ -52,9 +52,9 @@ const MyPage = () => {
       link: "/pages/class12/Physics",
     },
     {
-      title: "###",
-      description: "Unavailable",
-      link: "##",
+      title: "Computer Network",
+      description: "Available",
+      link: "/pages/class12/Physics",
     },
     {
       title: "###",
