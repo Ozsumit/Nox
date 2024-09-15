@@ -6,6 +6,7 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 import Iframe from "@/components/ui/iframe";
+import Link from "next/link";
 import { Breadcrumb } from "@/components/ui/breadcrumbs";
 import Footer from "@/components/ui/footer";
 const MyPage = () => {
@@ -22,16 +23,26 @@ const MyPage = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  const toggleLessons = (subjectTitle: string) => {
+    setVisibleLessons((currentVisible) =>
+      currentVisible === subjectTitle ? null : subjectTitle
+    );
+  };
+
+  const handleCardClick = (title: string) => {
+    setCurrentIdentifier(title);
+  };
+
   const items = [
     {
       title: "Class 9",
-      description: "*Unavailable!!*",
+      description: "Unavailable!!",
       link: "##",
     },
     {
       title: "Class 10",
       description: "Available",
-      link: "../pages/class10/Nepali",
+      link: "##",
     },
     {
       title: "Class 11",
@@ -41,101 +52,64 @@ const MyPage = () => {
     {
       title: "Class 12",
       description: "Unavailable!!",
-      link: "../pages/class12/Physics",
-    },
-  ];
-
-  const subs = [
-    {
-      title: "Physics",
-      description: "Available",
-      link: "/pages/class12/Physics",
-    },
-    {
-      title: "Computer Network",
-      description: "Available",
-
-      
-      link: "/pages/class12/Cnet",
-
-    },
-    {
-      title: "###",
-      description: "Unavailable",
-      link: "##",
-    },
-    {
-      title: "###",
-      description: "Unavailable",
       link: "##",
     },
   ];
 
   const lessons = [
     {
-      title: "Unit1",
-      description: "Unavailable!!",
+      title: "Unit 1",
+      description: "Introduction To Computer Network",
+      link: "#pdf",
+    },
+    {
+      title: "##",
+      description: "###",
       link: "##",
     },
     {
-      title: "Unit2",
-      description: "Available",
+      title: "##",
+      description: "###",
       link: "##",
     },
     {
-      title: "Unit3",
-      description: "Available",
+      title: "##",
+      description: "###",
       link: "##",
     },
     {
-      title: "Unit4",
-      description: "Unavailable!!",
-      link: "###",
-    },
-    {
-      title: "Unit5",
-      description: "Unavailable!!",
+      title: "##",
+      description: "###",
       link: "##",
     },
     {
-      title: "Unit6",
-      description: "Unavailable!!",
-      link: "##",
-    },
-    {
-      title: "Unit7",
-      description: "Unavailable!!",
-      link: "##",
-    },
-    {
-      title: "Unit8",
-      description: "Unavailable!!",
+      title: "##",
+      description: "###",
       link: "##",
     },
   ];
   const pagination = [
     { label: "Home", href: "/" },
-    { label: "Class 12", href: "/class12/" },
-    // { label: "DBMS", href: "/app/pages/class10/DBMS" },
+    { label: "Class 11", href: "/class11/" },
+    { label: "Java", href: "/app/pages/class11/Java" },
   ];
 
   return (
     <main>
       <div className=" h-screen rounded-md bg-black flex flex-col w-auto lg:px-28 sm:px-4 pt-2">
-        {" "}
         <div className="hero flex justify-center flex-col pt-16 w-auto">
           <Breadcrumb className=" z-10" items={pagination} />
 
           <ShootingStars />
           <StarsBackground />
           <HoverEffect
-            items={lessons}
-            className="lesson hidden"
-            // onCardClick={handleCardClick}
+            items={items}
+            className="hidden"
+            onCardClick={handleCardClick}
           />
           {isLoading ? (
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 rounded-5xl">
-              {[...Array(4)].map((_, index) => (
+              {[...Array(6)].map((_, index) => (
                 <Skeleton
                   key={index}
                   height={150}
@@ -147,15 +121,29 @@ const MyPage = () => {
             </div>
           ) : (
             <HoverEffect
-              items={subs}
-              className="subs "
-              // onCardClick={handleCardClick}
+              items={lessons}
+              className="lesson"
+              onCardClick={handleCardClick}
             />
           )}
+          <div
+            id="pdf"
+            className="flex justify-center items-center my-16 rounded-4xl"
+          >
+            {isLoading ? (
+              <Skeleton
+                height={400}
+                width="100%"
+                className="mb-4 rounded-7xl"
+                baseColor="#000000"
+                highlightColor="#383838"
+              />
+            ) : (
+              <Iframe identifier={currentIdentifier} />
+            )}
+          </div>
+          <Footer items={lessons} />
         </div>
-        {/* <Footer items={items} />
-         */}
-        <Footer items={subs} />
       </div>
     </main>
   );
