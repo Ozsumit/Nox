@@ -54,7 +54,10 @@ const MyPage = () => {
     {
       title: "Computer Network",
       description: "Available",
+
+      
       link: "/pages/class12/Cnet",
+
     },
     {
       title: "###",

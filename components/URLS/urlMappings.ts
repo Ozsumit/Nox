@@ -269,9 +269,11 @@ export const urlMappings: {
     Grade: "12",
     subject: "Physics",
   },
+
   // ---------------------------------Cnet-------------------
   
   "Introduction To Computer Network": {
+
     url: "https://drive.google.com/file/d/1-DNPZESaA95afuheEob_edhKmrmB83Q6/preview",
     Grade: "12",
     subject: "Computer Network",
