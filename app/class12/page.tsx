@@ -54,10 +54,12 @@ const MyPage = () => {
     {
       title: "Computer Network",
       description: "Available",
-
-      
       link: "/pages/class12/Cnet",
-
+    },
+    {
+      title: "Chemistry",
+      description: "Available",
+      link: "/pages/class12/Chemistry",
     },
     {
       title: "###",
@@ -95,7 +97,7 @@ const MyPage = () => {
     {
       title: "Unit5",
       description: "Unavailable!!",
-      link: "##",
+      link: "###",
     },
     {
       title: "Unit6",

@@ -269,11 +269,19 @@ export const urlMappings: {
     Grade: "12",
     subject: "Physics",
   },
-
+  "To detect foriegn element in oganic compound (i)": {
+    url: "https://drive.google.com/file/d/10TFKd0QtXVjk9ZbnvBfSlFcYdCFvUrv5/preview",
+    Grade: "12",
+    subject: "Chemistry",
+  },
+  "To detect foriegn element in oganic compound (ii)": {
+    url: "https://drive.google.com/file/d/1E52A44BvyB8GeW3KHF7xqphkCSKr-nva/preview",
+    Grade: "12",
+    subject: "Chemistry",
+  },
   // ---------------------------------Cnet-------------------
-  
-  "Introduction To Computer Network": {
 
+  "Introduction To Computer Network": {
     url: "https://drive.google.com/file/d/1-DNPZESaA95afuheEob_edhKmrmB83Q6/preview",
     Grade: "12",
     subject: "Computer Network",
